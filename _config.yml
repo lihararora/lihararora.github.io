@@ -1,14 +1,14 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+name: Rahil Arora - Personal Blog
+description: Security and stuff!
+meta_description: "Rahil Arora's Personal Blog about Security and stuff!"
 
 markdown: redcarpet
 highlighter: pygments
 logo: false
 paginate: 15
 baseurl: /
-domain_name: 'http://yourblog-domain.com'
+domain_name: 'http://www.rahilarora.com'
 
 # Details for the RSS feed generator
-url:            'blog url'
-author:         'Your Name'
+url:            'www.rahilarora.com'
+author:         'Rahil Arora'
