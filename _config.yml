@@ -10,5 +10,5 @@ baseurl:
 domain_name: 'http://www.rahilarora.com'
 
 # Details for the RSS feed generator
-url:            ''
+url:            'www.rahilarora.com'
 author:         'Rahil Arora'
