@@ -7,15 +7,15 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+title:            Rahil Arora
+tagline:          'Personal Website'
+description:      'Security Enthusiast |<br /> n00b Blogger |<br /> Tennis Lover'
+url:              http://rahilarora.com
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Rahil Arora'
+  url:            https://twitter.com/lihararora
 
 paginate:         5
 
@@ -23,4 +23,13 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+    url:            https://github.com/lihararora
+
+twitter:
+    url:            https://twitter.com/lihararora
+
+linkedin:
+    url:            https://www.linkedin.com/in/lihararora
+
+stackoverflow:
+    url:            http://stackoverflow.com/users/1382832/rahil-arora

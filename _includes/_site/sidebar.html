@@ -7,6 +7,7 @@
         </a>
       </h1>
       <p class="lead">{{ site.description }}</p>
+      <a href="http://twitter.com/lihararora"><span class="socicon">a</span> @lihararora</a>
     </div>
 
     <nav class="sidebar-nav">
@@ -30,19 +31,7 @@
       <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
       <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
     </nav>
-      <a class="contact svg-icon--link stackoverflow" href="{{ site.stackoverflow.url }}" target="_blank">
-        {% include svg-icons/stackoverflow.html %}
-      </a>
-      <a class="contact svg-icon--link github" href="{{ site.github.url }}" target="_blank">
-        {% include svg-icons/github.html %}
-      </a>
-      <a class="contact svg-icon--link twitter" href="{{ site.twitter.url }}" target="_blank">
-        {% include svg-icons/twitter.html %}
-      </a>
-      <a class="contact svg-icon--link linkedin" href="{{ site.linkedin.url }}" target="_blank">
-        {% include svg-icons/linkedin.html %}
-      </a>
 
-    <p class="copyright">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
 </div>
