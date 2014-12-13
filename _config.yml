@@ -9,7 +9,7 @@ relative_permalinks: true
 # Setup
 title:            Rahil Arora
 tagline:          'Personal Website'
-description:      'Security Enthusiast |<br /> n00b Blogger |<br /> Tennis Lover'
+description:      '<span>Security Enthusiast | </span><span>n00b Blogger | </span><span>Tennis Lover</span>'
 url:              http://rahilarora.com
 baseurl:          /
 
