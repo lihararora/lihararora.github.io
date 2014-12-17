@@ -25,22 +25,22 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
+            <a href="mailto:contact@rahilarora.com">Email</a>
     </nav>
-      <a class="contact svg-icon--link stackoverflow" href="{{ site.stackoverflow.url }}" target="_blank">
-        {% include svg-icons/stackoverflow.html %}
-      </a>
-      <a class="contact svg-icon--link github" href="{{ site.github.url }}" target="_blank">
+    <div class="contact">
+      <a class="svg-icon--link github" href="{{ site.github.url }}" target="_blank">
         {% include svg-icons/github.html %}
       </a>
-      <a class="contact svg-icon--link twitter" href="{{ site.twitter.url }}" target="_blank">
+      <a class="svg-icon--link stackoverflow" href="{{ site.stackoverflow.url }}" target="_blank">
+        {% include svg-icons/stackoverflow.html %}
+      </a>
+      <a class="svg-icon--link twitter" href="{{ site.twitter.url }}" target="_blank">
         {% include svg-icons/twitter.html %}
       </a>
-      <a class="contact svg-icon--link linkedin" href="{{ site.linkedin.url }}" target="_blank">
+      <a class="svg-icon--link linkedin" href="{{ site.linkedin.url }}" target="_blank">
         {% include svg-icons/linkedin.html %}
       </a>
+    </div>
 
     <p class="copyright">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
