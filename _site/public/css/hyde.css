@@ -36,7 +36,7 @@ html {
 }
 @media (min-width: 48em) {
   html {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media (min-width: 58em) {
@@ -55,7 +55,7 @@ html {
 
 .aaaa {
    display: inline;
-   font-size: 19px;
+   font-size: 20px;
 }
 .sidebar {
   text-align: center;
@@ -69,7 +69,7 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 15rem;
+    width: 16rem;
     text-align: left;
   }
   .aaaa {
@@ -79,7 +79,7 @@ html {
 
 /* Sidebar links */
 .sidebar a {
-  margin-right: 7px;
+  margin-right: 4px;
   color: #fff;
 }
 
@@ -87,8 +87,8 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
-  font-size: 40px;
+  font-size: 48px;
+  font-weight: bold;
 }
 
 /* Sidebar nav */
@@ -121,6 +121,7 @@ a.sidebar-nav-item:focus {
         position: absolute;
         font-size: 16px;
         bottom: 40px;
+        margin-left: 25px;
     }
     .contact{
         position: absolute;

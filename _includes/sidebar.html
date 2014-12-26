@@ -25,9 +25,11 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-            <a href="mailto:contact@rahilarora.com">Email</a>
     </nav>
     <div class="contact">
+      <a class="svg-icon--link email" href="mailto:contact@rahilarora.com">
+        {% include svg-icons/email.html %}
+      </a>
       <a class="svg-icon--link github" href="{{ site.github.url }}" target="_blank">
         {% include svg-icons/github.html %}
       </a>
