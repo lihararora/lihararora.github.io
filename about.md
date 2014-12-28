@@ -3,28 +3,20 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+Hey there! Welcome to my personal website! :-)  
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+My name is Rahil Arora. I recently graduated from the [Johns Hopkins Universty - Information Security Institute](http://isi.jhu.edu) with a Master's in Security Informatics. My primary areas of interest include Cryptography, Web Application Security and Network Security. [Email me](mailto:contact@rahilarora.com) to get more professional inforamtion (or to request my CV).
 
-There are currently two themes built on Poole:
+### Hobbies
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+I love playing tennis! I also like to learn new languages (Spnish being my personal favorite - "Me encanta Español!") and sometimes, I use phrases from different languages to impress (and annoy) my dearest friends. When I don't feel like doing anything, I simply enjoy some [good bollywood music](http://8tracks.com/lihararora/my-comfort-zone) with a cup of [Masala Tea](http://en.wikipedia.org/wiki/Masala_chai).
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+### This Site
 
-## Setup
+*Built on [Poole](http://getpoole.com/), based on [Hyde theme](http://hyde.getpoole.com/), powered by [Jekyll](http://jekyllrb.com/) and hosted on [Github Pages](https://pages.github.com/).*
 
-Some fun facts about the setup of this project include:
+This site is inspired by [Daniel Miessler's awesome website](https://danielmiessler.com/) and is being used as a techinical blog on security related topics. As a graduate student, I learned so many cool things from some very cool technical blogs out there. Now I feel that it's time for me to make some contirbution to the security community as well. I'll try to learn something new, every week, and will share it through this blog. I'll also be using this site to share some very [useful resources](http://www.rahilarora.com/useful_resources), which can be used to explore different areas of Computer Security.
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+Have questions or suggestions? Feel free to [email me](mailto:contact@rahilarora.com) or contact me on [Twitter](https://twitter.com/lihararora).
 
 Thanks for reading!
