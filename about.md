@@ -9,7 +9,7 @@ My name is Rahil Arora. I recently graduated from the [Johns Hopkins Universty -
 
 ### Hobbies
 
-I love playing tennis! I also like to learn new languages (Spnish being my personal favorite - "Me encanta Español!") and sometimes, I use phrases from different languages to impress (and annoy) my dearest friends. When I don't feel like doing anything, I simply enjoy some [good bollywood music](http://8tracks.com/lihararora/my-comfort-zone) with a cup of [Masala Tea](http://en.wikipedia.org/wiki/Masala_chai).
+I love playing tennis! I also like to learn new languages (Spanish being my personal favorite - "Me encanta Español!") and sometimes, I use phrases from different languages to impress (and annoy) my dearest friends. When I don't feel like doing anything, I simply enjoy some [good bollywood music](http://8tracks.com/lihararora/my-comfort-zone) with a cup of [Masala Tea](http://en.wikipedia.org/wiki/Masala_chai).
 
 ### This Site
 

@@ -21,6 +21,12 @@ title: Useful Resources
 * [How does SSL/TLS work?](http://security.stackexchange.com/a/20847/22401) - [Thomas Pornin's](http://security.stackexchange.com/users/655/thomas-pornin) wonderful answer to the question
 * [Meyer, C., & Schwenk, J. (2014). SoK: Lessons Learned From SSL/TLS Attacks](http://www.nds.rub.de/media/nds/veroeffentlichungen/2013/08/19/paper.pdf) - A brief chronology of SSL/TLS attacks
 
+### Web Application Security
+
+* [Damn Vulnerable Web Application (DVWA)](http://www.dvwa.co.uk/) - an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and aid teachers/students to teach/learn web application security in a class room environment.
+
+* [Google's XSS game](https://xss-game.appspot.com/) - In this training program, you will learn to find and exploit XSS bugs. 
+
 ### Memory Exploits
 
 * David Brumley's lecture notes on [Exploits](https://users.ece.cmu.edu/~dbrumley/courses/18487-f13/powerpoint/03-controlflow-attack.pdf) and [Control Flow Hijack Defenses](https://users.ece.cmu.edu/~dbrumley/courses/18487-f13/powerpoint/05-controlflow-defense.pdf)
