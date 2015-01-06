@@ -24,9 +24,9 @@ title: Useful Resources
 ### Web Application Security
 
 * [Damn Vulnerable Web Application (DVWA)](http://www.dvwa.co.uk/) - an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and aid teachers/students to teach/learn web application security in a class room environment.
-
 * [Google's XSS game](https://xss-game.appspot.com/) - In this training program, you will learn to find and exploit XSS bugs. 
 
 ### Memory Exploits
 
 * David Brumley's lecture notes on [Exploits](https://users.ece.cmu.edu/~dbrumley/courses/18487-f13/powerpoint/03-controlflow-attack.pdf) and [Control Flow Hijack Defenses](https://users.ece.cmu.edu/~dbrumley/courses/18487-f13/powerpoint/05-controlflow-defense.pdf)
+* [University of Maryland's Software Security](https://www.coursera.org/course/softwaresec) course on Coursera - This course we will explore the foundations of software security. We will consider important software vulnerabilities and attacks that exploit them -- such as buffer overflows, SQL injection, and session hijacking -- and we will consider defenses that prevent or mitigate these attacks, including advanced testing and program analysis techniques.
