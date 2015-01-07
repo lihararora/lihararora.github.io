@@ -7,31 +7,37 @@
   </url>
   <url>
     <loc>http://rahilarora.com//404.html</loc>
-    <lastmod>2015-01-07T13:47:01-05:00</lastmod>
+    <lastmod>2015-01-07T14:45:36-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://rahilarora.com//about/</loc>
-    <lastmod>2015-01-07T13:47:01-05:00</lastmod>
+    <lastmod>2015-01-07T14:45:36-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://rahilarora.com//archive/</loc>
+    <lastmod>2015-01-07T14:45:36-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://rahilarora.com//</loc>
-    <lastmod>2015-01-07T13:47:01-05:00</lastmod>
+    <lastmod>2015-01-07T14:45:36-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://rahilarora.com//quotes_to_live_by/</loc>
-    <lastmod>2015-01-07T13:47:01-05:00</lastmod>
+    <lastmod>2015-01-07T14:45:36-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://rahilarora.com//useful_resources/</loc>
-    <lastmod>2015-01-07T13:47:01-05:00</lastmod>
+    <lastmod>2015-01-07T14:45:36-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
