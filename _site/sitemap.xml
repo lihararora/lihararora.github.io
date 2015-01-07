@@ -1,47 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://rahilarora.com//2013/12/28/introducing-hyde/</loc>
-    <lastmod>2013-12-28T00:00:00-05:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://rahilarora.com//2012/02/07/example-content/</loc>
-    <lastmod>2012-02-07T00:00:00-05:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://rahilarora.com//2012/02/06/whats-jekyll/</loc>
-    <lastmod>2012-02-06T00:00:00-05:00</lastmod>
+    <loc>http://rahilarora.com//2015/01/07/hello-world/</loc>
+    <lastmod>2015-01-07T00:00:00-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://rahilarora.com//404.html</loc>
-    <lastmod>2015-01-07T06:33:25-05:00</lastmod>
+    <lastmod>2015-01-07T13:47:01-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://rahilarora.com//about/</loc>
-    <lastmod>2015-01-07T06:33:25-05:00</lastmod>
+    <lastmod>2015-01-07T13:47:01-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://rahilarora.com//</loc>
-    <lastmod>2015-01-07T06:33:25-05:00</lastmod>
+    <lastmod>2015-01-07T13:47:01-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://rahilarora.com//quotes_to_live_by/</loc>
-    <lastmod>2015-01-07T06:33:25-05:00</lastmod>
+    <lastmod>2015-01-07T13:47:01-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://rahilarora.com//useful_resources/</loc>
-    <lastmod>2015-01-07T06:33:25-05:00</lastmod>
+    <lastmod>2015-01-07T13:47:01-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
