@@ -12,6 +12,7 @@ tagline:          'Personal Website'
 description:      '<span class="aaaa">Security Enthusiast | </span><span class="aaaa">n00b Blogger | </span><span class="aaaa">Tennis Lover</span>'
 url:              http://rahilarora.com
 baseurl:          /
+privacy_url:      /privacy
 google_analytics:   true
 gems:               
     - jekyll-sitemap

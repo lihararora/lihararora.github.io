@@ -121,17 +121,29 @@ a.sidebar-nav-item:focus {
     .copyright{
         position: absolute;
         font-size: 16px;
-        bottom: 40px;
-        margin-left: 25px;
+        bottom: 45px;
+        margin-left: 30px;
     }
     .contact{
         position: absolute;
         bottom: 90px;
     }
+    .privacy
+    {
+        position: absolute;
+        bottom: 45px;
+        margin-left: 75px;
+        font-size: 16px;
+    }
 }
 .copyright{
     margin-top: 0.5rem;
     font-size: 16px;
+}
+.privacy{
+    font-size: 16px;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
 }
 /* Sticky sidebar
  *

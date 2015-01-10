@@ -21,7 +21,9 @@
       {% for node in pages_list %}
         {% if node.title != null %}
           {% if node.layout == "page" %}
+            {% if node.title != "Privacy Policy" %}
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+            {% endif %}
           {% endif %}
         {% endif %}
       {% endfor %}
@@ -46,5 +48,6 @@
     </div>
 
     <p class="copyright"><a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</a></p>
+    <p class="privacy"><a href={{site.privacy_url}}>Privacy Policy</a></p>
   </div>
 </div>
