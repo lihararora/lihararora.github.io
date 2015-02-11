@@ -3,7 +3,7 @@ layout: page
 title: Privacy Policy
 ---
 
-I'm  using Google Analytics for this website. 
+This site uses Google Analytics. 
 
 Google Analytics collects information such as how often users visit this site, how long users stay for, what kind of device they're using, what other sites they used prior to coming to this site, etc. This information is only used by me to improve my site and its content. This information is not combined with any kind of personally identifiable information of the users.
 

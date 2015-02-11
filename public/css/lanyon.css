@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .aaaa {
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   padding-left: 1rem; 
 }
 .sidebar {
@@ -168,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 1rem;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: bold;
   padding-left: 1rem;
 }
@@ -195,7 +195,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact {
   position: absolute;
-  bottom: 70px;
+  bottom: 65px;
   padding-left: 1rem;
 }
 
@@ -226,10 +226,15 @@ a.sidebar-nav-item:focus {
   border-color: transparent;
 }
 
-@media (min-width: 48em) {
+a.svg-icon--link{
+  padding-right: 2px;
+}
+
+@media (min-width: 38em) {
   .sidebar-about h1 {
     padding-left: 1.5rem;
     margin-top: 1rem;
+    font-size: 48px;
   }
   .sidebar-item {
     padding: 1.5rem;
@@ -242,6 +247,7 @@ a.sidebar-nav-item:focus {
     padding-left: 1.5rem;
   }
   .aaaa{
+	font-size: 20px;
     padding-left: 1.5rem;
   }
   .copyright{
@@ -250,10 +256,9 @@ a.sidebar-nav-item:focus {
   .privacy{
     padding-left: 1.5rem;
   }
-}
-
-a.svg-icon--link{
-  padding-right: 4px;
+  a.svg-icon--link{
+    padding-right: 4px;
+  }
 }
 
 /* Hide the sidebar checkbox that we toggle with `.sidebar-toggle` */
@@ -355,7 +360,7 @@ a.svg-icon--link{
 
 .page,
 .post {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 /* Blog post or page title */
