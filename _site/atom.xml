@@ -4,7 +4,7 @@
  <title>Rahil Arora</title>
  <link href="http://rahilarora.com/atom.xml" rel="self"/>
  <link href="http://rahilarora.com/"/>
- <updated>2015-01-10T16:44:50-05:00</updated>
+ <updated>2015-02-10T22:28:41-08:00</updated>
  <id>http://rahilarora.com</id>
  <author>
    <name>Rahil Arora</name>
@@ -15,7 +15,7 @@
  <entry>
    <title>Hello world!</title>
    <link href="http://rahilarora.com/2015/01/07/hello-world/"/>
-   <updated>2015-01-07T00:00:00-05:00</updated>
+   <updated>2015-01-07T00:00:00-08:00</updated>
    <id>http://rahilarora.com/2015/01/07/hello-world</id>
    <content type="html">&lt;p&gt;Hola amigos!&lt;/p&gt;
 
