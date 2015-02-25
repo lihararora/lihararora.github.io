@@ -20,3 +20,11 @@ This site is inspired by [Daniel Miessler's awesome website](https://danielmiess
 Have questions or suggestions? Feel free to either comment below or [email me](mailto:contact@rahilarora.com) or contact me on [Twitter](https://twitter.com/lihararora).
 
 Thanks for reading!
+
+---------------
+
+### *Disclaimer*
+
+*This is my personal blog/website. The opninons or views epxress on this blog are mine and do not represent those of my current, or previous, employers. All content provided on this blog is for informational purposes only. I make no representation as to accuracy, completeness, currentness, suitability, or validity of any information on this blog and will not be liable for any errors, omissions, or delays in this information or any losses, injuries, or damages arising from its use.*
+
+---------------
