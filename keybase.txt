@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/lihararora
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://rahilarora.com
+  * I am lihararora (https://keybase.io/lihararora) on keybase.
+  * I have a public key with fingerprint 32E0 EA46 E890 60EC AD05  041F 3C59 C8D9 E88E FFDE
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "32e0ea46e89060ecad05041f3c59c8d9e88effde",
+            "host": "keybase.io",
+            "key_id": "3c59c8d9e88effde",
+            "kid": "0101e26bbe8d7a4ab18526f5c6281601c64c4752b3b87d5c6604969dc4bc3ff54b310a",
+            "uid": "0c625434ae41a324e78f986790077519",
+            "username": "lihararora"
+        },
+        "service": {
+            "hostname": "rahilarora.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1429060277,
+    "expire_in": 157680000,
+    "prev": "b1f072c7c60a71e208ea2a9c890d95897b64c7f4ec2d7e311ebb7761acdf9bef",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.8
+Comment: https://keybase.io/crypto
+
+yMIeAnicZZJfSBRBHMfPy9LMMLIejIxcjaJMZndnd3YPH/pjBZaI/QGJ8JyZnb3b
+PG+vvTtPUSsfKjCkl8KiPwYq1EN/hAwTC1PxJRRKAyMtFCGDpIeICimbtXpqXob5
+/T7f78zvywytXuZJS6I7mk+nL+ZoSS+eF8U9x3b2dtcLxDbqBF+9UMWWNtMKB5gT
+caxwTPAJssQAw1Blmg5UwCg2gAKgaMpU0alm6EzTmGkaTMgXgnbUVXAbgqOswLJ5
+jR/8luH6/M9XLTWACEQmqYQwzUAYYiJqiqSaClUlTVSBSFVIIVIkIhMNGbysAqir
+ukEhobJpKpDIIsDcLv7HjusUKEPMoIhlCTKkmbqmIh0AhBRRd8Eoc8K4mnE6ZAWx
+gx3bwUJjvsDrNRZlbgjuLH8ZBwet0BJTQO1qro84dsymdoj3grFYxOdKY3URl00w
+4v/r4idW2OBRckENc6KWHRZ8IidpzHJtRSi5gUoI5QusNmI5zG+5hIJUDfDlXsNq
+uCURTYAkiqgKMOJJAY1hCfMsdWDoiqYjwgNCJmRUMhCTRZERgpAqYmqYOmGm4M51
+KmwLPpk/Ewe4ZdQKhHEs7jChcaD/RLInKc2zYrnX/QyetJVr/n2Re4dTPR0towuv
+932Ol1YPxtL7D15eO9b8c8/bbatKMlPKNr9va7nFVlrJ47lX7lYOzU19nXgiXPW+
+W5zc0NC1+zt69rKiF4Q7d3xcl1HyDPcUjw9Mj03+mMq1u/sKvLMX5hLFNyvSL1Z8
+807mgsG+byVbnzbllCbWtGwbTGksKtyQ3GinZs1rOcczJpoONJ0LnvUOLkohiL/e
+ucEetqaPFK16XxYoB3EdPmq71DnT82H1mcLRaxfKN6Zl7cqTT6ZMjR0975+5X/pg
+Ma9+dm97R9av9a3ZlcPP1cIPw12fphtG9r99vKX3VWbtkUPzt9sXQnWJTU3ZjlP7
+5fpBEnojTSa2E1j8G9o8Ju8=
+=JuMo
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lihararora
+
+==================================================================
+
