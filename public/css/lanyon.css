@@ -1,4 +1,13 @@
 /*
+icopyright{
+  position: absolute;
+  font-size: 16px;
+  bottom: 15px;
+  padding-left: 1rem;
+  font-size: 16px;
+  margin-top: 1rem;
+}
+  
  *  ___
  * /\_ \
  * \//\ \      __      ___   __  __    ___     ___
@@ -195,10 +204,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact {
   position: absolute;
-  bottom: 65px;
+  bottom: 90px;
   padding-left: 1rem;
 }
 
+.keybase{
+  position: absolute;
+  bottom: 40px;
+  padding-left: 1rem;
+  font-size: 16px;
+  margin-top: 1rem;
+}
+  
 .copyright{
   position: absolute;
   font-size: 16px;
@@ -249,6 +266,9 @@ a.svg-icon--link{
   .aaaa{
 	font-size: 20px;
     padding-left: 1.5rem;
+  }
+  .keybase{
+	padding-left: 1.5rem;
   }
   .copyright{
     padding-left: 1.5rem;
