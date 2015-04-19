@@ -4,7 +4,7 @@
  <title>Rahil Arora</title>
  <link href="http://rahilarora.com/atom.xml" rel="self"/>
  <link href="http://rahilarora.com/"/>
- <updated>2015-04-14T19:32:02-07:00</updated>
+ <updated>2015-04-19T14:06:42-07:00</updated>
  <id>http://rahilarora.com</id>
  <author>
    <name>Rahil Arora</name>
@@ -13,17 +13,119 @@
 
  
  <entry>
+   <title>Security is all about Context</title>
+   <link href="http://rahilarora.com/2015/04/19/context/"/>
+   <updated>2015-04-19T00:00:00-07:00</updated>
+   <id>http://rahilarora.com/2015/04/19/context</id>
+   <content type="html">&lt;p&gt;Since this is my first security related blog post (ever), I would like to write
+about one of the most important things that I learnt during my grad school:
+&lt;em&gt;security is all about context&lt;/em&gt;. This is exactly one of those important lessons
+that we learn, as a student, and don’t realize their importance until we apply
+them to the real world problems. It has been almost 3 months since I’ve started
+working as a full-time Security Consultant, and I’ve already realized how
+appropriately this phrase applies to the real world problems in computer
+security. &lt;/p&gt;
+
+&lt;p&gt;In case you don&amp;#39;t feel like reading more, here&amp;#39;s the TLDR: &lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;Security is all about Context&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;One of the perks of working as a Security Consultant is that you get to
+test/break/pwn applications/software every now and then. In order to effectively
+test applications/software, it is really important to understand the context.
+Two great approaches to understanding the context are: &lt;a href=&quot;https://www.owasp.org/index.php/Application_Threat_Modeling&quot;&gt;Application Threat
+Modeling&lt;/a&gt; and
+&lt;a href=&quot;https://www.owasp.org/index.php/Attack_Surface_Analysis_Cheat_Sheet&quot;&gt;Attack Surface Analysis&lt;/a&gt; (these do
+not have to be formal ones if you’re just testing an application, but are very
+important for efficient security assessments). From the OWASP links mentioned
+above:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The Attack Surface describes all of the different points where an attacker
+could get into a system, and where they could get data out.  Threat Modeling
+is a structured approach that enables you to identify, quantify, and address
+the security risks associated with an application. &lt;/p&gt;
+
+&lt;p&gt;There is a recursive relationship between Attack Surface Analysis and
+Application Threat Modeling: changes to the Attack Surface should trigger
+threat modeling, and threat modeling helps you to understand the Attack
+Surface of the application. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The simplest possible example that I could think of off the top of my head is
+related to a Cross-Site Scripting mitigation technique. The most common advice
+on this problem, which experts usually give, is: &lt;em&gt;&amp;quot;Use context appropriate
+encoding&amp;quot;&lt;/em&gt; (notice the word &amp;quot;context&amp;quot;?). It simply means that just &lt;em&gt;any&lt;/em&gt; output
+encoding cannot guarantee full-proof protection against XSS attacks. What else
+could go wrong if we just HTML encode the output? Well, the application might be
+inserting these user inputs into JavaScript or into the event handlers, in which
+case HTML encoding is not the correct mitigation. Now the question is if it is
+enough to just escape all inputs with respect to JavaScript and HTML? Again, it
+depends!  What if the application has an import to CSV functionality, allowing
+others to import user data in CSV (Comma Seperated Values) format? An attacker
+can use this to insert spreadsheet formulae, which can lead to arbitrary command
+execution on victim’s computer. For more information on this, read &lt;a href=&quot;http://www.contextis.com/resources/blog/comma-separated-vulnerabilities/&quot;&gt;Comma
+Separated Vulnerabilities&lt;/a&gt;. The
+point is, it is hard to devise a proper mitigation mechanism for an attack,
+without understanding the context.&lt;/p&gt;
+
+&lt;p&gt;Yet another example (kind of lame, but apt with regards to this post’s topic):
+Apple claims that &lt;a href=&quot;https://www.apple.com/iphone-6/touch-id/&quot;&gt;&lt;em&gt;your fingerprint is the perfect
+password&lt;/em&gt;&lt;/a&gt;. Well, they are absolutely
+right! But this cannot be true in every context. For instance: &lt;blockquote
+class=&quot;twitter-tweet tw-align-center&quot; lang=&quot;en&quot;&gt;&lt;p&gt;I woke this morning to find
+my 7 y/o levering my finger onto the TouchID sensor of my phone. Maybe time to
+go back to passwords.&lt;/p&gt;&amp;mdash; Matthew Green (@matthew&lt;em&gt;d&lt;/em&gt;green) &lt;a
+href=&quot;https://twitter.com/matthew_d_green/status/537236790000615426&quot;&gt;November
+25, 2014&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot;
+charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m sure that by now, you all would have realized that this is the reason why
+any advice/solution/answer, that you&amp;#39;ve received or you&amp;#39;ll ever receive from a
+security expert, will always start with the phrase: &lt;strong&gt;&lt;em&gt;It depends&lt;/em&gt;&lt;/strong&gt;. Yep, it
+all depends on the context! Big thanks to &lt;a href=&quot;https://www.linkedin.com/in/sethjamesnielson&quot;&gt;Prof. Seth Nielson&lt;/a&gt; for teaching this important
+lesson (among many others).&lt;/p&gt;
+
+&lt;p&gt;Feel free to &lt;a href=&quot;mailto:contact@rahilarora.com&quot;&gt;email me&lt;/a&gt;, if you want me to share
+something specific or need any advice/help. Please feel free to do the same or
+leave a comment below, if you have any advice for me or any comment regarding
+anything on this website. &lt;em&gt;We are all here to learn. That&amp;#39;s what life is all
+about!&lt;/em&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Hello world!</title>
    <link href="http://rahilarora.com/2015/01/07/hello-world/"/>
    <updated>2015-01-07T00:00:00-08:00</updated>
    <id>http://rahilarora.com/2015/01/07/hello-world</id>
    <content type="html">&lt;p&gt;Hola amigos!&lt;/p&gt;
 
-&lt;p&gt;This is just a cliché &lt;em&gt;hello world!&lt;/em&gt; post. To know about me and why I&amp;#39;ve started this website, please visit the &lt;a href=&quot;http://www.rahilarora.com/about/&quot;&gt;about section&lt;/a&gt;. I wanted to start my blog with a technical (security related) post, but I&amp;#39;ve not been able to read anything interesting, as I&amp;#39;m currently enjoying most of my time with my family in India. Anyways, I&amp;#39;ll just give a quick introduction to what you can expect from the website.&lt;/p&gt;
+&lt;p&gt;This is just a cliché &lt;em&gt;hello world!&lt;/em&gt; post. To know about me and why I&amp;#39;ve started
+this website, please visit the &lt;a href=&quot;http://www.rahilarora.com/about/&quot;&gt;about
+section&lt;/a&gt;. I wanted to start my blog with a
+technical (security related) post, but I&amp;#39;ve not been able to read anything
+interesting, as I&amp;#39;m currently enjoying most of my time with my family in India.
+Anyways, I&amp;#39;ll just give a quick introduction to what you can expect from the
+website.&lt;/p&gt;
 
-&lt;p&gt;This site is an attempt to improve my knowledge and writing skills, by contributing something useful, back to the security community. It will also act as a useful resource for the beginners who are interested in topics such as Cryptography, Application Security and Network Security. I will try to explain things/concepts in simple terms in order to target different types of readers at different levels of understanding. However, I beleive that the posts and the &lt;a href=&quot;http://www.rahilarora.com/useful_resources/&quot;&gt;resources&lt;/a&gt; I&amp;#39;ll be sharing, will be of great use to current graduate/undergrad students, who are willing to pursue a career in Security.&lt;/p&gt;
+&lt;p&gt;This site is an attempt to improve my knowledge and writing skills, by
+contributing something useful, back to the security community. It will also act
+as a useful resource for the beginners who are interested in topics such as
+Cryptography, Application Security and Network Security. I will try to explain
+things/concepts in simple terms in order to target different types of readers at
+different levels of understanding. However, I beleive that the posts and the
+&lt;a href=&quot;http://www.rahilarora.com/useful_resources/&quot;&gt;resources&lt;/a&gt; I&amp;#39;ll be sharing, will
+be of great use to current graduate/undergrad students, who are willing to
+pursue a career in Security.&lt;/p&gt;
 
-&lt;p&gt;Feel free to &lt;a href=&quot;mailto:contact@rahilarora.com&quot;&gt;email me&lt;/a&gt;, if you want me to share something specific or need any advice/help. Please feel free to do the same or leave a comment below, if you have any advice for me or any comment regarding anything on this website. &lt;em&gt;We are all here to learn. That&amp;#39;s what life is all about!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Feel free to &lt;a href=&quot;mailto:contact@rahilarora.com&quot;&gt;email me&lt;/a&gt;, if you want me to share
+something specific or need any advice/help. Please feel free to do the same or
+leave a comment below, if you have any advice for me or any comment regarding
+anything on this website. &lt;em&gt;We are all here to learn. That&amp;#39;s what life is all
+about!&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Thank you for reading!&lt;/p&gt;
 
