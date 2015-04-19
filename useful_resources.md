@@ -11,6 +11,14 @@ title: Useful Resources
 * [Cryptograpgy Stack Exchange](http://crypto.stackexchange.com/) - Question and answer site for software developers, mathematicians and others interested in cryptography
 * [iSEC Research Labs](https://isecpartners.github.io/) - Tools, whitepapers and conference presentations developed/produced by iSEC's security researchers
 
+### Web Application Security
+
+* [Browser Security Handbook](https://code.google.com/p/browsersec/wiki/Main) - By Michal Zalewski
+* [Google Gruyere](https://google-gruyere.appspot.com/) - Web Application Exploits and Defenses -  a small, cheesy web application that allows its users to publish snippets of text and store assorted files. 
+* [Google's XSS game](https://xss-game.appspot.com/) - In this training program, you will learn to find and exploit XSS bugs
+* [Damn Vulnerable Web Application (DVWA)](http://www.dvwa.co.uk/) - an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and aid teachers/students to teach/learn web application security in a class room environment
+
+
 ### Cryptography
 
 * [Dan Boneh's Cryptograhpy I](https://www.coursera.org/course/crypto) - Learn about the inner workings of cryptographic primitives and how to apply this knowledge in real-world applications
@@ -21,12 +29,13 @@ title: Useful Resources
 * [How does SSL/TLS work?](http://security.stackexchange.com/a/20847/22401) - [Thomas Pornin's](http://security.stackexchange.com/users/655/thomas-pornin) wonderful answer to the question
 * [Meyer, C., & Schwenk, J. (2014). SoK: Lessons Learned From SSL/TLS Attacks](http://www.nds.rub.de/media/nds/veroeffentlichungen/2013/08/19/paper.pdf) - A brief chronology of SSL/TLS attacks
 
-### Web Application Security
-
-* [Damn Vulnerable Web Application (DVWA)](http://www.dvwa.co.uk/) - an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and aid teachers/students to teach/learn web application security in a class room environment
-* [Google's XSS game](https://xss-game.appspot.com/) - In this training program, you will learn to find and exploit XSS bugs
-
 ### Memory Exploits
 
 * David Brumley's lecture notes on [Exploits](https://users.ece.cmu.edu/~dbrumley/courses/18487-f13/powerpoint/03-controlflow-attack.pdf) and [Control Flow Hijack Defenses](https://users.ece.cmu.edu/~dbrumley/courses/18487-f13/powerpoint/05-controlflow-defense.pdf)
 * [University of Maryland's Software Security](https://www.coursera.org/course/softwaresec) course on Coursera - explores the foundations of software security and covers important (and common) software vulnerabilities such as buffer overflows, SQL injection, and session hijacking
+
+### Books
+
+* The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws - [Amazon Link](http://www.amazon.com/The-Web-Application-Hackers-Handbook/dp/1118026470)
+* The Cuckoo's Egg: Tracking a Spy Through the Maze of Computer Espionage - [Amazon Link](http://www.amazon.com/The-Cuckoos-Egg-Tracking-Espionage/dp/1416507787)
+
