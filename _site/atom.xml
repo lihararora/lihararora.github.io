@@ -4,13 +4,173 @@
  <title>Rahil Arora</title>
  <link href="http://rahilarora.com/atom.xml" rel="self"/>
  <link href="http://rahilarora.com/"/>
- <updated>2015-06-26T15:36:36-07:00</updated>
+ <updated>2015-06-28T19:53:46-07:00</updated>
  <id>http://rahilarora.com</id>
  <author>
    <name>Rahil Arora</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Same-Origin Policy & the ways around</title>
+   <link href="http://rahilarora.com/2015/06/28/sop/"/>
+   <updated>2015-06-28T00:00:00-07:00</updated>
+   <id>http://rahilarora.com/2015/06/28/sop</id>
+   <content type="html">&lt;p&gt;Same Origin Policy is one of the most important security concepts implemented in all
+modern browsers. It is a set of mechanisms which control how a script loaded
+from one origin can interact with a resource from another origin. &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy&quot;&gt;Mozilla
+Developer Network&lt;/a&gt;
+provides a good summary of Same Origin Policy. It permits an origin to send
+information to another origin, but does not permit an origin to receive
+information from another origin. In short, it controls the interactions between
+different origins based on three simple rules: &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cross-origin writes are typically allowed. Examples are links, redirects and form submissions. Certain
+rarely used HTTP requests (methods other than GET, POST or HEAD) require preflight. &lt;/li&gt;
+&lt;li&gt;Cross-origin embedding is
+typically allowed. Examples are listed in the next section. &lt;/li&gt;
+&lt;li&gt;Cross-origin reads are typically not allowed, but read access is often leaked by embedding. For example you can
+read the width and height of an embedded image, the actions of an embedded
+script, or the availability of an embedded resource. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thus, it does not prevent against the attacks related to transfer of information
+from one origin to another (such as CSRF and clickjacking). The restriction on receiving
+information is to prevent malicious web applications to read sensitive
+information from other applications. More details on SOP can be found in &lt;a href=&quot;https://code.google.com/p/browsersec/wiki/Part2&quot;&gt;part
+2 of  Michal Zalewski’s famous Browser Security Handbook&lt;/a&gt;. 
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Exceptions to SOP&lt;/h2&gt;
+
+&lt;p&gt;Same origin policies define a set of restrictions on several important
+functionalities within a web browser including DOM access, XMLHttpRequest,
+cookie setting, etc. However, there are a few exceptions - features which are
+not subject to same origin checks. Some of these exception are even utilized to
+circumvent same origin policy (as discussed in the next section). &lt;/p&gt;
+
+&lt;p&gt;There are
+numerous mechanisms that permit HTML web pages to include and display remote
+sub-resources through HTTP GET requests without having these operations
+subjected to a well-defined set of security checks. This can be achieved by
+using HTML tags such as: &lt;code&gt;&amp;lt;IMG SRC=”...”&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;SCRIPT SRC=&amp;quot;...&amp;quot;&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;LINK
+REL=&amp;quot;stylesheet&amp;quot; HREF=&amp;quot;...&amp;quot;&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;EMBED SRC=&amp;quot;...&amp;quot;&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;OBJECT CODEBASE=&amp;quot;...&amp;quot;&amp;gt;&lt;/code&gt;, and
+&lt;code&gt;&amp;lt;APPLET CODEBASE=&amp;quot;...&amp;quot;&amp;gt;&lt;/code&gt;. These tags are used to issue GET requests to arbitrary
+sites and fetch resources. Not only this, any &lt;code&gt;Content-Type&lt;/code&gt; and
+&lt;code&gt;Content-Disposition&lt;/code&gt; HTTP headers returned by the server for the sub-resource
+are mostly ignored; there is no opportunity to authoritatively instruct the
+browser about the intended purpose of a served document to prevent having the
+data parsed as JavaScript, CSS, etc. More details can be found at &lt;a href=&quot;https://code.google.com/p/browsersec/wiki/Part2#Life_outside_same-origin_rules&quot;&gt;life outside
+same-origin
+rules&lt;/a&gt;
+section of the Browser Security Handbook. &lt;/p&gt;
+
+&lt;p&gt;The reason why including an
+untrusted third-party script (served from a third party domain) in your
+application is a bad idea because the origin of a JavaScript file is defined by
+the domain of the HTML page which includes it. That is, regardless of their
+source, remote scripts always execute in the security context of the document
+they are attached to. Once called, JavaScript has full access to the current
+DOM, and limited access to DOMs of other windows; it may also further invoke
+new JavaScript by calling &lt;code&gt;eval()&lt;/code&gt;, configuring timers (&lt;code&gt;setTimeout(...)&lt;/code&gt; and
+&lt;code&gt;setInterval(...)&lt;/code&gt;), or producing JavaScript-invoking HTML. So, for example, if
+you include the Google Analytics code with a &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tag, it can do anything
+to your website but does not have same origin permissions on the Google&amp;#39;s
+website. 
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Circumventing SOP&lt;/h2&gt;
+
+&lt;p&gt;There are many different ways of circumventing
+same origin checks and I’ll mention four of them in this section. However, to
+keep this post short, I’ll only cover basics of the first two techniques, while
+just touching the remaining two techniques. I will also try to include
+references for further readings with the techniques. &lt;/p&gt;
+
+&lt;h3&gt;JSONP&lt;/h3&gt;
+
+&lt;p&gt;JSONP is really a simple trick to overcome the XMLHttpRequest same
+domain policy. As you know one cannot read an AJAX response from a different
+domain. So - instead of using XMLHttpRequest, we have to use &lt;code&gt;&amp;lt;SCRIPT&amp;gt;&lt;/code&gt; tags in
+order for JavaScript to get data from another domain. It requires the
+application server to send back a JSON response to the client, wrapped around a
+callback method provided by the client. So the &lt;code&gt;&amp;lt;SCRIPT&amp;gt;&lt;/code&gt; tag is used to make a
+GET request to a source (different domain) such as:
+&lt;a href=&quot;http://www.example.net/sample.php?callback=mycallback&quot;&gt;http://www.example.net/sample.php?callback=mycallback&lt;/a&gt;. The basically returns
+back something like: &lt;code&gt;mycallback({ foo: &amp;#39;bar&amp;#39; })&lt;/code&gt;. This will invoke the function
+&lt;code&gt;mycallback()&lt;/code&gt; which is already defined on client side and thus your script will be
+able read the server response. For more information, read &lt;a href=&quot;http://stackoverflow.com/questions/2067472/what-is-jsonp-all-about&quot;&gt;this discussion on SO&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;There are
+some security implications of using JSONP in your application. First, it should
+never be used to read sensitive data because this would allow anyone to read
+this sensitive information just by including the source (with the call back) in
+their page. If this is required, make sure the request is protected by using
+CSRF headers, so that server can identify if a GET request is genuine or not.
+Second, the callback can be used as a potential XSS (Cross-Site Scripting) vector. As JSONP is really
+JavaScript, it can do everything else JavaScript can do, so you need to trust
+the provider of the JSONP data.  More details can be &lt;a href=&quot;http://homakov.blogspot.com/2013/02/are-you-sure-you-use-jsonp-properly.html&quot;&gt;found here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Cross-Origin Resource Sharing (CORS)&lt;/h3&gt;
+
+&lt;p&gt;These days, CORS is being used over JSONP as it allows XMLHttpRequests
+to other domains and does not have any security implications if deployed
+properly. CORS lets you opt out of SOP restrictions. Read more about CORS &lt;a href=&quot;http://sanderstechnology.com/2014/getting-to-know-cross-origin-resource-sharing-cors/13423/#.VP3Xk_zF9qU&quot;&gt;here&lt;/a&gt;. From wikipedia:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Cross-origin resource sharing (CORS) is a mechanism that allows many resources
+(e.g., fonts, JavaScript, etc.) on a web page to be requested from another
+domain outside the domain from which the resource originated. In particular,
+JavaScript’s AJAX calls can use the XMLHttpRequest mechanism. Such
+“cross-domain” requests would otherwise be forbidden by web browsers, per the
+same-origin security policy. CORS defines a way in which the browser and the
+server can interact to determine whether or not to allow the cross-origin
+request. It is more useful than only allowing same-origin requests, but it is
+more secure than simply allowing all such cross-origin requests.” &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Again, CORS can also have serious security implications, if not implemented
+properly. For example, if a server is configured to respond to all the origins
+(i.e. sets &lt;code&gt;Access-Control-Allow-Origin: *&lt;/code&gt; in the response) and requires
+credentials from the client (i.e. sets &lt;code&gt;Access-Control-Allow-Credentials: True&lt;/code&gt; in the
+response), then you can trick someone&amp;#39;s browser into making a CSRF style
+request. Obviously, this can be protected against such attack using a normal CSRF token.&lt;/p&gt;
+
+&lt;h3&gt;window.postMessage() method&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;window.postMessage&lt;/code&gt;, when called, causes a
+ MessageEvent to be dispatched at the target window when any pending script that
+ must be executed completes (e.g. remaining event handlers if window.postMessage
+ is called from an event handler, previously-set pending timeouts, etc.). &lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The MessageEvent has the type message, a data property which is set to the string
+value of the first argument provided to window.postMessage, an origin property
+corresponding to the origin of the main document in the window calling
+window.postMessage at the time window.postMessage was called, and a source
+property which is the window from which window.postMessage is called. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Source: &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage&quot;&gt;Mozilla Developer Network&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Reverse Proxy method&lt;/h3&gt;
+
+&lt;p&gt;Setting up a simple reverse proxy on the server, will
+allow the browser to use relative paths for the Ajax requests, while the server
+would be acting as a proxy to any remote location. For example, the browser
+would be able to request &lt;em&gt;/ajax/test.xml&lt;/em&gt; as a relative URL, but the server would
+serve this by acting as a proxy to &lt;a href=&quot;http://other-domain.com/ajax/test.xml&quot;&gt;http://other-domain.com/ajax/test.xml&lt;/a&gt;. One
+interesting feature of the this method is that the reverse proxy can easily
+distribute requests towards multiple back-ends, thus acting as a load balancer.
+&lt;br /&gt;
+&lt;br /&gt;
+Feel free to &lt;a href=&quot;mailto:contact@rahilarora.com&quot;&gt;email me&lt;/a&gt;, if you want me to share something specific or need any advice/help. Please feel free to do the same or leave a comment below, if you have any advice for me or any comment regarding anything on this website. &lt;em&gt;We are all here to learn. That&amp;#39;s what life is all about!&lt;/em&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Security is all about Context</title>
@@ -86,9 +246,10 @@ charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 any advice/solution/answer, that you&amp;#39;ve received or you&amp;#39;ll ever receive from a
 security expert, will always start with the phrase: &lt;strong&gt;&lt;em&gt;It depends&lt;/em&gt;&lt;/strong&gt;. Yep, it
 all depends on the context! Big thanks to &lt;a href=&quot;https://www.linkedin.com/in/sethjamesnielson&quot;&gt;Prof. Seth Nielson&lt;/a&gt; for teaching this important
-lesson (among many others).&lt;/p&gt;
-
-&lt;p&gt;Feel free to &lt;a href=&quot;mailto:contact@rahilarora.com&quot;&gt;email me&lt;/a&gt;, if you want me to share
+lesson (among many others).
+&lt;br /&gt;
+&lt;br /&gt;
+Feel free to &lt;a href=&quot;mailto:contact@rahilarora.com&quot;&gt;email me&lt;/a&gt;, if you want me to share
 something specific or need any advice/help. Please feel free to do the same or
 leave a comment below, if you have any advice for me or any comment regarding
 anything on this website. &lt;em&gt;We are all here to learn. That&amp;#39;s what life is all
