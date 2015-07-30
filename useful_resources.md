@@ -8,7 +8,7 @@ title: Useful Resources
 * [Few Thoughts on Cryptographic Engineering](http://blog.cryptographyengineering.com/) - Matt Green's Crypto Blog
 * [ImperialViolet](https://www.imperialviolet.org/) - Adam Langley's Weblog
 * [Information Security Stack Exchange](http://security.stackexchange.com/) - Question and answer site for Information security professionals
-* [Cryptograpgy Stack Exchange](http://crypto.stackexchange.com/) - Question and answer site for software developers, mathematicians and others interested in cryptography
+* [Cryptography Stack Exchange](http://crypto.stackexchange.com/) - Question and answer site for software developers, mathematicians and others interested in cryptography
 * [iSEC Research Labs](https://isecpartners.github.io/) - Tools, whitepapers and conference presentations developed/produced by iSEC's security researchers
 
 ### Web Application Security
@@ -33,6 +33,7 @@ title: Useful Resources
 
 * David Brumley's lecture notes on [Exploits](https://users.ece.cmu.edu/~dbrumley/courses/18487-f13/powerpoint/03-controlflow-attack.pdf) and [Control Flow Hijack Defenses](https://users.ece.cmu.edu/~dbrumley/courses/18487-f13/powerpoint/05-controlflow-defense.pdf)
 * [University of Maryland's Software Security](https://www.coursera.org/course/softwaresec) course on Coursera - explores the foundations of software security and covers important (and common) software vulnerabilities such as buffer overflows, SQL injection, and session hijacking
+* [Embedded Security CTF](https://microcorruption.com) - You've been given access to a device that controls a lock. Your job: defeat the lock by exploiting bugs in the device's code.
 
 ### Books
 
