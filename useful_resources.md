@@ -18,6 +18,15 @@ title: Useful Resources
 * [Google's XSS game](https://xss-game.appspot.com/) - In this training program, you will learn to find and exploit XSS bugs
 * [Damn Vulnerable Web Application (DVWA)](http://www.dvwa.co.uk/) - an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and aid teachers/students to teach/learn web application security in a class room environment
 
+### Linux Security/Internals
+
+* [Linux insides](https://0xax.gitbooks.io/linux-insides/content/index.html) - A series of posts about the linux kernel and its insides
+* [Linux workstation security checklist](https://github.com/lfit/itpol/blob/master/linux-workstation-security.md) - This document is aimed at teams of systems administrators who use Linux workstations to access and manage your project's IT infrastructure 
+
+### Network Security
+
+* [NMAP mind map](https://nmap.org/docs/nmap-mindmap.pdf) - The ultimate network scanning tool
+* [MASSCAN by Robert Graham](https://github.com/robertdavidgraham/masscan) - This is the fastest Internet port scanner. It can scan the entire Internet in under 6 minutes, transmitting 10 million packets per second
 
 ### Cryptography
 
@@ -28,6 +37,7 @@ title: Useful Resources
 
 * [How does SSL/TLS work?](http://security.stackexchange.com/a/20847/22401) - [Thomas Pornin's](http://security.stackexchange.com/users/655/thomas-pornin) wonderful answer to the question
 * [Meyer, C., & Schwenk, J. (2014). SoK: Lessons Learned From SSL/TLS Attacks](http://www.nds.rub.de/media/nds/veroeffentlichungen/2013/08/19/paper.pdf) - A brief chronology of SSL/TLS attacks
+* [SSL Threat Model](http://blog.ivanristic.com/downloads/SSL_Threat_Model.png) - By Ivan Ristic
 
 ### Memory Exploits
 
