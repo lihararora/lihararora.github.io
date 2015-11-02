@@ -4,7 +4,7 @@
  <title>Rahil Arora</title>
  <link href="http://rahilarora.com/atom.xml" rel="self"/>
  <link href="http://rahilarora.com/"/>
- <updated>2015-10-11T22:25:51-07:00</updated>
+ <updated>2015-11-01T18:57:01-08:00</updated>
  <id>http://rahilarora.com</id>
  <author>
    <name>Rahil Arora</name>
@@ -13,7 +13,26 @@
 
  
  <entry>
-   <title>Same-Origin Policy & the ways around</title>
+   <title>A Sad Story of SSL</title>
+   <link href="http://rahilarora.com/2015/11/01/ssl/"/>
+   <updated>2015-11-01T00:00:00-07:00</updated>
+   <id>http://rahilarora.com/2015/11/01/ssl</id>
+   <content type="html">&lt;p&gt;Back when I was pursuing my Master&amp;#39;s, I gave a small presentation on how SSL/TLS protocol has been affected by various protocol specific attacks, how these issues have been patched, and, most importantly, what could have prevented SSL/TLS from these attacks. I tried explaining these issues in the form a &amp;quot;story&amp;quot;. Since I&amp;#39;ve not been able to write anything new, I thought it&amp;#39;d be a good idea to share this presentation here. Here is the presentation (MS office online got rid off some of the animations and sound effects, but most of the other stuff is still in place):  &lt;/p&gt;
+
+&lt;iframe src='https://onedrive.live.com/embed?cid=72FFAD7E5DF51FC1&amp;resid=72FFAD7E5DF51FC1%211340&amp;authkey=AFCvBo0Cnlt8c-M&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=1' width='722px' height='565px' frameborder='0'&gt;This is an embedded &lt;a target='_blank' href='http://office.com'&gt;Microsoft Office&lt;/a&gt; presentation, powered by &lt;a target='_blank' href='http://office.com/webapps'&gt;Office Online&lt;/a&gt;.&lt;/iframe&gt;
+
+&lt;p&gt;NOTE: The attacks mentioned in the presentation are protocol specific and not implementation specific. I also gave a separate presentation on this famous paper: &lt;a href=&quot;https://www.cs.utexas.edu/%7Eshmat/shmat_ccs12.pdf&quot;&gt;The Most Dangerous Code in the World: Validating SSL Certificates in Non-Browser Software&lt;/a&gt;. This paper talks about some SSL/TLS implementation specific issues, which the authors found by analysing some critical libraries and applications. Here is the presentation:&lt;/p&gt;
+
+&lt;iframe src='https://onedrive.live.com/embed?cid=72FFAD7E5DF51FC1&amp;resid=72FFAD7E5DF51FC1%211342&amp;authkey=AD-H7XZvY1044fg&amp;em=2&amp;wdAr=1.3333333333333333' width='722px' height='565px' frameborder='0'&gt;This is an embedded &lt;a target='_blank' href='http://office.com'&gt;Microsoft Office&lt;/a&gt; presentation, powered by &lt;a target='_blank' href='http://office.com/webapps'&gt;Office Online&lt;/a&gt;.&lt;/iframe&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+Feel free to &lt;a href=&quot;mailto:contact@rahilarora.com&quot;&gt;email me&lt;/a&gt;, if you want me to share something specific or need any advice/help. Please feel free to do the same or leave a comment below, if you have any advice for me or any comment regarding anything on this website. &lt;em&gt;We are all here to learn. That&amp;#39;s what life is all about!&lt;/em&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Same-Origin Policy & the Ways Around</title>
    <link href="http://rahilarora.com/2015/06/28/sop/"/>
    <updated>2015-06-28T00:00:00-07:00</updated>
    <id>http://rahilarora.com/2015/06/28/sop</id>
@@ -173,7 +192,7 @@ Feel free to &lt;a href=&quot;mailto:contact@rahilarora.com&quot;&gt;email me&lt
  </entry>
  
  <entry>
-   <title>Security is all about Context</title>
+   <title>Security is All About Context</title>
    <link href="http://rahilarora.com/2015/04/19/context/"/>
    <updated>2015-04-19T00:00:00-07:00</updated>
    <id>http://rahilarora.com/2015/04/19/context</id>
@@ -258,7 +277,7 @@ about!&lt;/em&gt;&lt;/p&gt;
  </entry>
  
  <entry>
-   <title>Hello world!</title>
+   <title>Hello World!</title>
    <link href="http://rahilarora.com/2015/01/07/hello-world/"/>
    <updated>2015-01-07T00:00:00-08:00</updated>
    <id>http://rahilarora.com/2015/01/07/hello-world</id>
