@@ -4,7 +4,7 @@
  <title>Rahil Arora</title>
  <link href="http://rahilarora.com/atom.xml" rel="self"/>
  <link href="http://rahilarora.com/"/>
- <updated>2015-11-01T18:57:01-08:00</updated>
+ <updated>2015-11-01T19:05:25-08:00</updated>
  <id>http://rahilarora.com</id>
  <author>
    <name>Rahil Arora</name>
@@ -21,7 +21,10 @@
 
 &lt;iframe src='https://onedrive.live.com/embed?cid=72FFAD7E5DF51FC1&amp;resid=72FFAD7E5DF51FC1%211340&amp;authkey=AFCvBo0Cnlt8c-M&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=1' width='722px' height='565px' frameborder='0'&gt;This is an embedded &lt;a target='_blank' href='http://office.com'&gt;Microsoft Office&lt;/a&gt; presentation, powered by &lt;a target='_blank' href='http://office.com/webapps'&gt;Office Online&lt;/a&gt;.&lt;/iframe&gt;
 
-&lt;p&gt;NOTE: The attacks mentioned in the presentation are protocol specific and not implementation specific. I also gave a separate presentation on this famous paper: &lt;a href=&quot;https://www.cs.utexas.edu/%7Eshmat/shmat_ccs12.pdf&quot;&gt;The Most Dangerous Code in the World: Validating SSL Certificates in Non-Browser Software&lt;/a&gt;. This paper talks about some SSL/TLS implementation specific issues, which the authors found by analysing some critical libraries and applications. Here is the presentation:&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;em&gt;NOTE&lt;/em&gt;: The attacks mentioned in the presentation are protocol specific and not implementation specific. &lt;/p&gt;
+
+&lt;p&gt;I also gave a separate presentation on this famous paper: &lt;a href=&quot;https://www.cs.utexas.edu/%7Eshmat/shmat_ccs12.pdf&quot;&gt;The Most Dangerous Code in the World: Validating SSL Certificates in Non-Browser Software&lt;/a&gt;. This paper talks about some SSL/TLS implementation specific issues, which the authors found by analysing some critical libraries and applications. Here is the presentation:&lt;/p&gt;
 
 &lt;iframe src='https://onedrive.live.com/embed?cid=72FFAD7E5DF51FC1&amp;resid=72FFAD7E5DF51FC1%211342&amp;authkey=AD-H7XZvY1044fg&amp;em=2&amp;wdAr=1.3333333333333333' width='722px' height='565px' frameborder='0'&gt;This is an embedded &lt;a target='_blank' href='http://office.com'&gt;Microsoft Office&lt;/a&gt; presentation, powered by &lt;a target='_blank' href='http://office.com/webapps'&gt;Office Online&lt;/a&gt;.&lt;/iframe&gt;
 
