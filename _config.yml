@@ -5,7 +5,7 @@ highlighter:      pygments
 # Serve
 
 host: 0.0.0.0
-        
+
 # Permalinks
 permalink:        pretty
 relative_permalinks: true
@@ -18,7 +18,7 @@ url:              http://rahilarora.com
 baseurl:          /
 privacy_url:      /privacy
 google_analytics:   true
-gems:               
+gems:
     - jekyll-sitemap
 disqus:             true
 disqus_username:    'lihararora'
@@ -31,6 +31,8 @@ paginate:         5
 
 # Custom vars
 version:          2.1.0
+
+time:             2016
 
 github:
     url:            https://github.com/lihararora

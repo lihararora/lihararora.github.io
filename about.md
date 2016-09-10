@@ -3,9 +3,9 @@ layout: page
 title: About
 ---
 
-Hey there! Welcome to my personal website! :-)  
+Hey there! Welcome to my personal website! :-)
 
-My name is Rahil Arora. I am a Security Enthusiast, living and working in San Francisco Bay Area. I graduated from the [Johns Hopkins Universty - Information Security Institute](http://isi.jhu.edu) with a Master's in Security Informatics. My primary areas of interest include Cryptography, Web Application Security and Network Security. [Email me](mailto:contact@rahilarora.com) to get more professional information (or to request my CV).
+My name is Rahil Arora. I am a Security Enthusiast, living and working in San Francisco Bay Area. I graduated from the [Johns Hopkins Universty - Information Security Institute](http://isi.jhu.edu) with a Master's in Security Informatics. My primary areas of interest include Web Application Security, Network Security, and Cryptography. [Email me](mailto:contact@rahilarora.com) to get more professional information (or to request my CV).
 
 ### Hobbies
 

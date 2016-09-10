@@ -3,7 +3,18 @@ layout: page
 title: Useful Resources
 ---
 
-### Awesome Sites/Blogs!
+### Best of Stackoverflow/Stackexchange Network
+
+* [Thoughts on (X)HTML parsing using Regular Expressions](http://stackoverflow.com/a/1732454/1382832)
+* [Our security auditor is an idiot. How do I give him the information he wants?](http://serverfault.com/questions/293217/)
+* [How does SSL/TLS work?](http://security.stackexchange.com/a/20847/22401)
+* [How to securely hash passwords?](http://security.stackexchange.com/a/31846/22401)
+* [Why is it faster to process a sorted array than an unsorted array?](http://stackoverflow.com/a/11227902/1382832)
+* [What is the best comment in source code you have ever encountered?](http://stackoverflow.com/questions/184618/)
+* [What's your favorite “programmer” cartoon?](http://stackoverflow.com/questions/84556/)
+* [We have an employee whose last name is Null - How to pass “Null” (a real surname!) to a SOAP web service in ActionScript 3?](http://stackoverflow.com/questions/4456438/)
+
+### Sites/Blogs
 
 * [Few Thoughts on Cryptographic Engineering](http://blog.cryptographyengineering.com/) - Matt Green's Crypto Blog
 * [ImperialViolet](https://www.imperialviolet.org/) - Adam Langley's Weblog
@@ -14,18 +25,19 @@ title: Useful Resources
 ### Web Application Security
 
 * [Browser Security Handbook](https://code.google.com/p/browsersec/wiki/Main) - By Michal Zalewski
-* [Google Gruyere](https://google-gruyere.appspot.com/) - Web Application Exploits and Defenses -  a small, cheesy web application that allows its users to publish snippets of text and store assorted files. 
+* [Google Gruyere](https://google-gruyere.appspot.com/) - Web Application Exploits and Defenses -  a small, cheesy web application that allows its users to publish snippets of text and store assorted files.
 * [Google's XSS game](https://xss-game.appspot.com/) - In this training program, you will learn to find and exploit XSS bugs
 * [Damn Vulnerable Web Application (DVWA)](http://www.dvwa.co.uk/) - an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and aid teachers/students to teach/learn web application security in a class room environment
 
 ### Linux Security/Internals
 
-* [Linux insides](https://0xax.gitbooks.io/linux-insides/content/index.html) - A series of posts about the linux kernel and its insides
-* [Linux workstation security checklist](https://github.com/lfit/itpol/blob/master/linux-workstation-security.md) - This document is aimed at teams of systems administrators who use Linux workstations to access and manage your project's IT infrastructure 
+* [Linux Insides](https://0xax.gitbooks.io/linux-insides/content/index.html) - A series of posts about the linux kernel and its insides
+* [Linux Workstation Security Checklist](https://github.com/lfit/itpol/blob/master/linux-workstation-security.md) - This document is aimed at teams of systems administrators who use Linux workstations to access and manage your project's IT infrastructure
 
 ### Network Security
 
-* [NMAP mind map](https://nmap.org/docs/nmap-mindmap.pdf) - The ultimate network scanning tool
+* [NMAP - Port Scanning Basics](https://nmap.org/book/man-port-scanning-basics.html)
+* [NMAP Mind Map](https://nmap.org/docs/nmap-mindmap.pdf) - The ultimate network scanning tool
 * [MASSCAN by Robert Graham](https://github.com/robertdavidgraham/masscan) - This is the fastest Internet port scanner. It can scan the entire Internet in under 6 minutes, transmitting 10 million packets per second
 
 ### Cryptography
@@ -49,4 +61,3 @@ title: Useful Resources
 
 * The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws - [Amazon Link](http://www.amazon.com/The-Web-Application-Hackers-Handbook/dp/1118026470)
 * The Cuckoo's Egg: Tracking a Spy Through the Maze of Computer Espionage - [Amazon Link](http://www.amazon.com/The-Cuckoos-Egg-Tracking-Espionage/dp/1416507787)
-
