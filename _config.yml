@@ -8,7 +8,6 @@ host: 0.0.0.0
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
 
 # Setup
 title:            Rahil Arora
@@ -19,7 +18,8 @@ baseurl:          /
 privacy_url:      /privacy
 google_analytics:   true
 gems:
-    - jekyll-sitemap
+  - jekyll-sitemap
+gems: [jekyll-paginate]
 disqus:             true
 disqus_username:    'lihararora'
 
@@ -28,11 +28,10 @@ author:
   url:            https://twitter.com/lihararora
 
 paginate:         5
+future: true
 
 # Custom vars
-version:          2.1.0
-
-time:             2016
+version:          3.2.1
 
 github:
     url:            https://github.com/lihararora
