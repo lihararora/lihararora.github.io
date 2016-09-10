@@ -19,7 +19,8 @@ privacy_url:      /privacy
 google_analytics:   true
 gems:
   - jekyll-sitemap
-gems: [jekyll-paginate]
+  - jekyll-feed
+  - jekyll-paginate
 disqus:             true
 disqus_username:    'lihararora'
 
