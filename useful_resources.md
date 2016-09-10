@@ -3,7 +3,7 @@ layout: page
 title: Useful Resources
 ---
 
-### Best of Stackoverflow/Stackexchange Network
+### Best of StackOverflow/StackExchange Network
 
 * [Thoughts on (X)HTML parsing using Regular Expressions](http://stackoverflow.com/a/1732454/1382832)
 * [Our security auditor is an idiot. How do I give him the information he wants?](http://serverfault.com/questions/293217/)
@@ -18,8 +18,8 @@ title: Useful Resources
 
 * [Few Thoughts on Cryptographic Engineering](http://blog.cryptographyengineering.com/) - Matt Green's Crypto Blog
 * [ImperialViolet](https://www.imperialviolet.org/) - Adam Langley's Weblog
-* [Information Security Stack Exchange](http://security.stackexchange.com/) - Question and answer site for Information security professionals
-* [Cryptography Stack Exchange](http://crypto.stackexchange.com/) - Question and answer site for software developers, mathematicians and others interested in cryptography
+* [Information Security StackExchange](http://security.stackexchange.com/) - Question and answer site for Information security professionals
+* [Cryptography StackExchange](http://crypto.stackexchange.com/) - Question and answer site for software developers, mathematicians and others interested in cryptography
 * [iSEC Research Labs](https://isecpartners.github.io/) - Tools, whitepapers and conference presentations developed/produced by iSEC's security researchers
 
 ### Web Application Security
