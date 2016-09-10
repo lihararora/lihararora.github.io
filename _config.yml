@@ -13,7 +13,7 @@ permalink:        pretty
 title:            Rahil Arora
 tagline:          'Personal Website'
 description:      '<span class="aaaa">Security Enthusiast | </span><span class="aaaa">n00b Blogger | </span><span class="aaaa">Tennis Lover</span>'
-url:              http://rahilarora.com
+url:              https://rahilarora.com
 baseurl:          /
 privacy_url:      /privacy
 google_analytics:   true

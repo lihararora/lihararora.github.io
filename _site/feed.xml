@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="https://rahilarora.com//feed.xml" rel="self" type="application/atom+xml" /><link href="https://rahilarora.com//" rel="alternate" type="text/html" /><updated>2016-09-10T13:54:02-07:00</updated><id>https://rahilarora.com//</id><title type="html">Rahil Arora</title><subtitle>&lt;span class=&quot;aaaa&quot;&gt;Security Enthusiast | &lt;/span&gt;&lt;span class=&quot;aaaa&quot;&gt;n00b Blogger | &lt;/span&gt;&lt;span class=&quot;aaaa&quot;&gt;Tennis Lover&lt;/span&gt;</subtitle><author><name>Rahil Arora</name></author><entry><title type="html">A Sad Story of SSL</title><link href="https://rahilarora.com//2015/11/01/ssl/" rel="alternate" type="text/html" title="A Sad Story of SSL" /><published>2015-11-01T00:00:00-07:00</published><updated>2015-11-01T00:00:00-07:00</updated><id>https://rahilarora.com//2015/11/01/ssl</id><content type="html" xml:base="https://rahilarora.com//2015/11/01/ssl/">&lt;p&gt;Back when I was pursuing my Master&amp;#39;s, I gave a small presentation on how SSL/TLS protocol has been affected by various protocol specific attacks, how these issues have been patched, and, most importantly, what could have prevented SSL/TLS from these attacks. I tried explaining these issues in the form a &amp;quot;story&amp;quot;. Since I&amp;#39;ve not been able to write anything new, I thought it&amp;#39;d be a good idea to share this presentation here. Here is the presentation (MS office online got rid off some of the animations and sound effects, but most of the other stuff is still in place):  &lt;/p&gt;
+
+&lt;iframe src='https://onedrive.live.com/embed?cid=72FFAD7E5DF51FC1&amp;resid=72FFAD7E5DF51FC1%211340&amp;authkey=AFCvBo0Cnlt8c-M&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=1' width='722px' height='565px' frameborder='0'&gt;This is an embedded &lt;a target='_blank' href='http://office.com'&gt;Microsoft Office&lt;/a&gt; presentation, powered by &lt;a target='_blank' href='http://office.com/webapps'&gt;Office Online&lt;/a&gt;.&lt;/iframe&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;em&gt;NOTE&lt;/em&gt;: The attacks mentioned in the presentation are protocol specific and not implementation specific. &lt;/p&gt;
+
+&lt;p&gt;I also gave a separate presentation on this famous paper: &lt;a href=&quot;https://www.cs.utexas.edu/%7Eshmat/shmat_ccs12.pdf&quot;&gt;The Most Dangerous Code in the World: Validating SSL Certificates in Non-Browser Software&lt;/a&gt;. This paper talks about some SSL/TLS implementation specific issues, which the authors found by analysing some critical libraries and applications. Here is the presentation:&lt;/p&gt;
+
+&lt;iframe src='https://onedrive.live.com/embed?cid=72FFAD7E5DF51FC1&amp;resid=72FFAD7E5DF51FC1%211342&amp;authkey=AD-H7XZvY1044fg&amp;em=2&amp;wdAr=1.3333333333333333' width='722px' height='565px' frameborder='0'&gt;This is an embedded &lt;a target='_blank' href='http://office.com'&gt;Microsoft Office&lt;/a&gt; presentation, powered by &lt;a target='_blank' href='http://office.com/webapps'&gt;Office Online&lt;/a&gt;.&lt;/iframe&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+Feel free to &lt;a href=&quot;mailto:contact@rahilarora.com&quot;&gt;email me&lt;/a&gt;, if you want me to share something specific or need any advice/help. Please feel free to do the same or leave a comment below, if you have any advice for me or any comment regarding anything on this website. &lt;em&gt;We are all here to learn. That&amp;#39;s what life is all about!&lt;/em&gt;&lt;/p&gt;</content><author><name>Rahil Arora</name></author><summary type="html">Back when I was pursuing my Master&amp;#39;s, I gave a small presentation on how SSL/TLS protocol has been affected by various protocol specific attacks, how these issues have been patched, and, most importantly, what could have prevented SSL/TLS from these attacks. I tried explaining these issues in the form a &amp;quot;story&amp;quot;. Since I&amp;#39;ve not been able to write anything new, I thought it&amp;#39;d be a good idea to share this presentation here. Here is the presentation (MS office online got rid off some of the animations and sound effects, but most of the other stuff is still in place):  
+
+This is an embedded Microsoft Office presentation, powered by Office Online.
+
+
+NOTE: The attacks mentioned in the presentation are protocol specific and not implementation specific. 
+
+I also gave a separate presentation on this famous paper: The Most Dangerous Code in the World: Validating SSL Certificates in Non-Browser Software. This paper talks about some SSL/TLS implementation specific issues, which the authors found by analysing some critical libraries and applications. Here is the presentation:
+
+This is an embedded Microsoft Office presentation, powered by Office Online.
+
+
+
+Feel free to email me, if you want me to share something specific or need any advice/help. Please feel free to do the same or leave a comment below, if you have any advice for me or any comment regarding anything on this website. We are all here to learn. That&amp;#39;s what life is all about!</summary></entry><entry><title type="html">Same-Origin Policy &amp;amp; the Ways Around</title><link href="https://rahilarora.com//2015/06/28/sop/" rel="alternate" type="text/html" title="Same-Origin Policy &amp; the Ways Around" /><published>2015-06-28T00:00:00-07:00</published><updated>2015-06-28T00:00:00-07:00</updated><id>https://rahilarora.com//2015/06/28/sop</id><content type="html" xml:base="https://rahilarora.com//2015/06/28/sop/">&lt;p&gt;Same Origin Policy is one of the most important security concepts implemented in all
+modern browsers. It is a set of mechanisms which control how a script loaded
+from one origin can interact with a resource from another origin. &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy&quot;&gt;Mozilla
+Developer Network&lt;/a&gt;
+provides a good summary of Same Origin Policy. It permits an origin to send
+information to another origin, but does not permit an origin to receive
+information from another origin. In short, it controls the interactions between
+different origins based on three simple rules: &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cross-origin writes are typically allowed. Examples are links, redirects and form submissions. Certain
+rarely used HTTP requests (methods other than GET, POST or HEAD) require preflight. &lt;/li&gt;
+&lt;li&gt;Cross-origin embedding is
+typically allowed. Examples are listed in the next section. &lt;/li&gt;
+&lt;li&gt;Cross-origin reads are typically not allowed, but read access is often leaked by embedding. For example you can
+read the width and height of an embedded image, the actions of an embedded
+script, or the availability of an embedded resource. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thus, it does not prevent against the attacks related to transfer of information
+from one origin to another (such as CSRF and clickjacking). The restriction on receiving
+information is to prevent malicious web applications to read sensitive
+information from other applications. More details on SOP can be found in &lt;a href=&quot;https://code.google.com/p/browsersec/wiki/Part2&quot;&gt;part
+2 of  Michal Zalewski’s famous Browser Security Handbook&lt;/a&gt;. 
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Exceptions to SOP&lt;/h2&gt;
+
+&lt;p&gt;Same origin policies define a set of restrictions on several important
+functionalities within a web browser including DOM access, XMLHttpRequest,
+cookie setting, etc. However, there are a few exceptions - features which are
+not subject to same origin checks. Some of these exception are even utilized to
+circumvent same origin policy (as discussed in the next section). &lt;/p&gt;
+
+&lt;p&gt;There are
+numerous mechanisms that permit HTML web pages to include and display remote
+sub-resources through HTTP GET requests without having these operations
+subjected to a well-defined set of security checks. This can be achieved by
+using HTML tags such as: &lt;code&gt;&amp;lt;IMG SRC=”...”&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;SCRIPT SRC=&amp;quot;...&amp;quot;&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;LINK
+REL=&amp;quot;stylesheet&amp;quot; HREF=&amp;quot;...&amp;quot;&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;EMBED SRC=&amp;quot;...&amp;quot;&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;OBJECT CODEBASE=&amp;quot;...&amp;quot;&amp;gt;&lt;/code&gt;, and
+&lt;code&gt;&amp;lt;APPLET CODEBASE=&amp;quot;...&amp;quot;&amp;gt;&lt;/code&gt;. These tags are used to issue GET requests to arbitrary
+sites and fetch resources. Not only this, any &lt;code&gt;Content-Type&lt;/code&gt; and
+&lt;code&gt;Content-Disposition&lt;/code&gt; HTTP headers returned by the server for the sub-resource
+are mostly ignored; there is no opportunity to authoritatively instruct the
+browser about the intended purpose of a served document to prevent having the
+data parsed as JavaScript, CSS, etc. More details can be found at &lt;a href=&quot;https://code.google.com/p/browsersec/wiki/Part2#Life_outside_same-origin_rules&quot;&gt;life outside
+same-origin
+rules&lt;/a&gt;
+section of the Browser Security Handbook. &lt;/p&gt;
+
+&lt;p&gt;The reason why including an
+untrusted third-party script (served from a third party domain) in your
+application is a bad idea because the origin of a JavaScript file is defined by
+the domain of the HTML page which includes it. That is, regardless of their
+source, remote scripts always execute in the security context of the document
+they are attached to. Once called, JavaScript has full access to the current
+DOM, and limited access to DOMs of other windows; it may also further invoke
+new JavaScript by calling &lt;code&gt;eval()&lt;/code&gt;, configuring timers (&lt;code&gt;setTimeout(...)&lt;/code&gt; and
+&lt;code&gt;setInterval(...)&lt;/code&gt;), or producing JavaScript-invoking HTML. So, for example, if
+you include the Google Analytics code with a &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tag, it can do anything
+to your website but does not have same origin permissions on the Google&amp;#39;s
+website. 
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Circumventing SOP&lt;/h2&gt;
+
+&lt;p&gt;There are many different ways of circumventing
+same origin checks and I’ll mention four of them in this section. However, to
+keep this post short, I’ll only cover basics of the first two techniques, while
+just touching the remaining two techniques. I will also try to include
+references for further readings with the techniques. &lt;/p&gt;
+
+&lt;h3&gt;JSONP&lt;/h3&gt;
+
+&lt;p&gt;JSONP is really a simple trick to overcome the XMLHttpRequest same
+domain policy. As you know one cannot read an AJAX response from a different
+domain. So - instead of using XMLHttpRequest, we have to use &lt;code&gt;&amp;lt;SCRIPT&amp;gt;&lt;/code&gt; tags in
+order for JavaScript to get data from another domain. It requires the
+application server to send back a JSON response to the client, wrapped around a
+callback method provided by the client. So the &lt;code&gt;&amp;lt;SCRIPT&amp;gt;&lt;/code&gt; tag is used to make a
+GET request to a source (different domain) such as:
+&lt;a href=&quot;http://www.example.net/sample.php?callback=mycallback&quot;&gt;http://www.example.net/sample.php?callback=mycallback&lt;/a&gt;. The basically returns
+back something like: &lt;code&gt;mycallback({ foo: &amp;#39;bar&amp;#39; })&lt;/code&gt;. This will invoke the function
+&lt;code&gt;mycallback()&lt;/code&gt; which is already defined on client side and thus your script will be
+able read the server response. For more information, read &lt;a href=&quot;http://stackoverflow.com/questions/2067472/what-is-jsonp-all-about&quot;&gt;this discussion on SO&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;There are
+some security implications of using JSONP in your application. First, it should
+never be used to read sensitive data because this would allow anyone to read
+this sensitive information just by including the source (with the call back) in
+their page. If this is required, make sure the request is protected by using
+CSRF headers, so that server can identify if a GET request is genuine or not.
+Second, the callback can be used as a potential XSS (Cross-Site Scripting) vector. As JSONP is really
+JavaScript, it can do everything else JavaScript can do, so you need to trust
+the provider of the JSONP data.  More details can be &lt;a href=&quot;http://homakov.blogspot.com/2013/02/are-you-sure-you-use-jsonp-properly.html&quot;&gt;found here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Cross-Origin Resource Sharing (CORS)&lt;/h3&gt;
+
+&lt;p&gt;These days, CORS is being used over JSONP as it allows XMLHttpRequests
+to other domains and does not have any security implications if deployed
+properly. CORS lets you opt out of SOP restrictions. Read more about CORS &lt;a href=&quot;http://sanderstechnology.com/2014/getting-to-know-cross-origin-resource-sharing-cors/13423/#.VP3Xk_zF9qU&quot;&gt;here&lt;/a&gt;. From wikipedia:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Cross-origin resource sharing (CORS) is a mechanism that allows many resources
+(e.g., fonts, JavaScript, etc.) on a web page to be requested from another
+domain outside the domain from which the resource originated. In particular,
+JavaScript’s AJAX calls can use the XMLHttpRequest mechanism. Such
+“cross-domain” requests would otherwise be forbidden by web browsers, per the
+same-origin security policy. CORS defines a way in which the browser and the
+server can interact to determine whether or not to allow the cross-origin
+request. It is more useful than only allowing same-origin requests, but it is
+more secure than simply allowing all such cross-origin requests.” &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Again, CORS can also have serious security implications, if not implemented
+properly. For example, if a server is configured to respond to all the origins
+(i.e. sets &lt;code&gt;Access-Control-Allow-Origin: *&lt;/code&gt; in the response) and requires
+credentials from the client (i.e. sets &lt;code&gt;Access-Control-Allow-Credentials: True&lt;/code&gt; in the
+response), then you can trick someone&amp;#39;s browser into making a CSRF style
+request. Obviously, this can be protected against such attack using a normal CSRF token.&lt;/p&gt;
+
+&lt;h3&gt;window.postMessage() method&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;window.postMessage&lt;/code&gt;, when called, causes a
+ MessageEvent to be dispatched at the target window when any pending script that
+ must be executed completes (e.g. remaining event handlers if window.postMessage
+ is called from an event handler, previously-set pending timeouts, etc.). &lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The MessageEvent has the type message, a data property which is set to the string
+value of the first argument provided to window.postMessage, an origin property
+corresponding to the origin of the main document in the window calling
+window.postMessage at the time window.postMessage was called, and a source
+property which is the window from which window.postMessage is called. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Source: &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage&quot;&gt;Mozilla Developer Network&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Reverse Proxy method&lt;/h3&gt;
+
+&lt;p&gt;Setting up a simple reverse proxy on the server, will
+allow the browser to use relative paths for the Ajax requests, while the server
+would be acting as a proxy to any remote location. For example, the browser
+would be able to request &lt;em&gt;/ajax/test.xml&lt;/em&gt; as a relative URL, but the server would
+serve this by acting as a proxy to &lt;a href=&quot;http://other-domain.com/ajax/test.xml&quot;&gt;http://other-domain.com/ajax/test.xml&lt;/a&gt;. One
+interesting feature of the this method is that the reverse proxy can easily
+distribute requests towards multiple back-ends, thus acting as a load balancer.
+&lt;br /&gt;
+&lt;br /&gt;
+Feel free to &lt;a href=&quot;mailto:contact@rahilarora.com&quot;&gt;email me&lt;/a&gt;, if you want me to share something specific or need any advice/help. Please feel free to do the same or leave a comment below, if you have any advice for me or any comment regarding anything on this website. &lt;em&gt;We are all here to learn. That&amp;#39;s what life is all about!&lt;/em&gt;&lt;/p&gt;</content><author><name>Rahil Arora</name></author><summary type="html">Same Origin Policy is one of the most important security concepts implemented in all
+modern browsers. It is a set of mechanisms which control how a script loaded
+from one origin can interact with a resource from another origin. Mozilla
+Developer Network
+provides a good summary of Same Origin Policy. It permits an origin to send
+information to another origin, but does not permit an origin to receive
+information from another origin. In short, it controls the interactions between
+different origins based on three simple rules: 
+
+
+Cross-origin writes are typically allowed. Examples are links, redirects and form submissions. Certain
+rarely used HTTP requests (methods other than GET, POST or HEAD) require preflight. 
+Cross-origin embedding is
+typically allowed. Examples are listed in the next section. 
+Cross-origin reads are typically not allowed, but read access is often leaked by embedding. For example you can
+read the width and height of an embedded image, the actions of an embedded
+script, or the availability of an embedded resource. 
+
+
+Thus, it does not prevent against the attacks related to transfer of information
+from one origin to another (such as CSRF and clickjacking). The restriction on receiving
+information is to prevent malicious web applications to read sensitive
+information from other applications. More details on SOP can be found in part
+2 of  Michal Zalewski’s famous Browser Security Handbook. 
+
+
+
+Exceptions to SOP
+
+Same origin policies define a set of restrictions on several important
+functionalities within a web browser including DOM access, XMLHttpRequest,
+cookie setting, etc. However, there are a few exceptions - features which are
+not subject to same origin checks. Some of these exception are even utilized to
+circumvent same origin policy (as discussed in the next section). 
+
+There are
+numerous mechanisms that permit HTML web pages to include and display remote
+sub-resources through HTTP GET requests without having these operations
+subjected to a well-defined set of security checks. This can be achieved by
+using HTML tags such as: &amp;lt;IMG SRC=”...”&amp;gt;, &amp;lt;SCRIPT SRC=&amp;quot;...&amp;quot;&amp;gt;, &amp;lt;LINK
+REL=&amp;quot;stylesheet&amp;quot; HREF=&amp;quot;...&amp;quot;&amp;gt;, &amp;lt;EMBED SRC=&amp;quot;...&amp;quot;&amp;gt;, &amp;lt;OBJECT CODEBASE=&amp;quot;...&amp;quot;&amp;gt;, and
+&amp;lt;APPLET CODEBASE=&amp;quot;...&amp;quot;&amp;gt;. These tags are used to issue GET requests to arbitrary
+sites and fetch resources. Not only this, any Content-Type and
+Content-Disposition HTTP headers returned by the server for the sub-resource
+are mostly ignored; there is no opportunity to authoritatively instruct the
+browser about the intended purpose of a served document to prevent having the
+data parsed as JavaScript, CSS, etc. More details can be found at life outside
+same-origin
+rules
+section of the Browser Security Handbook. 
+
+The reason why including an
+untrusted third-party script (served from a third party domain) in your
+application is a bad idea because the origin of a JavaScript file is defined by
+the domain of the HTML page which includes it. That is, regardless of their
+source, remote scripts always execute in the security context of the document
+they are attached to. Once called, JavaScript has full access to the current
+DOM, and limited access to DOMs of other windows; it may also further invoke
+new JavaScript by calling eval(), configuring timers (setTimeout(...) and
+setInterval(...)), or producing JavaScript-invoking HTML. So, for example, if
+you include the Google Analytics code with a &amp;lt;script&amp;gt; tag, it can do anything
+to your website but does not have same origin permissions on the Google&amp;#39;s
+website. 
+
+
+
+Circumventing SOP
+
+There are many different ways of circumventing
+same origin checks and I’ll mention four of them in this section. However, to
+keep this post short, I’ll only cover basics of the first two techniques, while
+just touching the remaining two techniques. I will also try to include
+references for further readings with the techniques. 
+
+JSONP
+
+JSONP is really a simple trick to overcome the XMLHttpRequest same
+domain policy. As you know one cannot read an AJAX response from a different
+domain. So - instead of using XMLHttpRequest, we have to use &amp;lt;SCRIPT&amp;gt; tags in
+order for JavaScript to get data from another domain. It requires the
+application server to send back a JSON response to the client, wrapped around a
+callback method provided by the client. So the &amp;lt;SCRIPT&amp;gt; tag is used to make a
+GET request to a source (different domain) such as:
+http://www.example.net/sample.php?callback=mycallback. The basically returns
+back something like: mycallback({ foo: &amp;#39;bar&amp;#39; }). This will invoke the function
+mycallback() which is already defined on client side and thus your script will be
+able read the server response. For more information, read this discussion on SO. 
+
+There are
+some security implications of using JSONP in your application. First, it should
+never be used to read sensitive data because this would allow anyone to read
+this sensitive information just by including the source (with the call back) in
+their page. If this is required, make sure the request is protected by using
+CSRF headers, so that server can identify if a GET request is genuine or not.
+Second, the callback can be used as a potential XSS (Cross-Site Scripting) vector. As JSONP is really
+JavaScript, it can do everything else JavaScript can do, so you need to trust
+the provider of the JSONP data.  More details can be found here.
+
+Cross-Origin Resource Sharing (CORS)
+
+These days, CORS is being used over JSONP as it allows XMLHttpRequests
+to other domains and does not have any security implications if deployed
+properly. CORS lets you opt out of SOP restrictions. Read more about CORS here. From wikipedia:
+
+
+Cross-origin resource sharing (CORS) is a mechanism that allows many resources
+(e.g., fonts, JavaScript, etc.) on a web page to be requested from another
+domain outside the domain from which the resource originated. In particular,
+JavaScript’s AJAX calls can use the XMLHttpRequest mechanism. Such
+“cross-domain” requests would otherwise be forbidden by web browsers, per the
+same-origin security policy. CORS defines a way in which the browser and the
+server can interact to determine whether or not to allow the cross-origin
+request. It is more useful than only allowing same-origin requests, but it is
+more secure than simply allowing all such cross-origin requests.” 
+
+
+Again, CORS can also have serious security implications, if not implemented
+properly. For example, if a server is configured to respond to all the origins
+(i.e. sets Access-Control-Allow-Origin: * in the response) and requires
+credentials from the client (i.e. sets Access-Control-Allow-Credentials: True in the
+response), then you can trick someone&amp;#39;s browser into making a CSRF style
+request. Obviously, this can be protected against such attack using a normal CSRF token.
+
+window.postMessage() method
+
+window.postMessage, when called, causes a
+ MessageEvent to be dispatched at the target window when any pending script that
+ must be executed completes (e.g. remaining event handlers if window.postMessage
+ is called from an event handler, previously-set pending timeouts, etc.). 
+
+
+The MessageEvent has the type message, a data property which is set to the string
+value of the first argument provided to window.postMessage, an origin property
+corresponding to the origin of the main document in the window calling
+window.postMessage at the time window.postMessage was called, and a source
+property which is the window from which window.postMessage is called. 
+
+
+Source: Mozilla Developer Network.
+
+Reverse Proxy method
+
+Setting up a simple reverse proxy on the server, will
+allow the browser to use relative paths for the Ajax requests, while the server
+would be acting as a proxy to any remote location. For example, the browser
+would be able to request /ajax/test.xml as a relative URL, but the server would
+serve this by acting as a proxy to http://other-domain.com/ajax/test.xml. One
+interesting feature of the this method is that the reverse proxy can easily
+distribute requests towards multiple back-ends, thus acting as a load balancer.
+
+
+Feel free to email me, if you want me to share something specific or need any advice/help. Please feel free to do the same or leave a comment below, if you have any advice for me or any comment regarding anything on this website. We are all here to learn. That&amp;#39;s what life is all about!</summary></entry><entry><title type="html">Security is All About Context</title><link href="https://rahilarora.com//2015/04/19/context/" rel="alternate" type="text/html" title="Security is All About Context" /><published>2015-04-19T00:00:00-07:00</published><updated>2015-04-19T00:00:00-07:00</updated><id>https://rahilarora.com//2015/04/19/context</id><content type="html" xml:base="https://rahilarora.com//2015/04/19/context/">&lt;p&gt;Since this is my first security related blog post (ever), I would like to write
+about one of the most important things that I learnt during my grad school:
+&lt;em&gt;security is all about context&lt;/em&gt;. This is exactly one of those important lessons
+that we learn, as a student, and don’t realize their importance until we apply
+them to the real world problems. It has been almost 3 months since I’ve started
+working as a full-time Security Consultant, and I’ve already realized how
+appropriately this phrase applies to the real world problems in computer
+security. &lt;/p&gt;
+
+&lt;p&gt;In case you don&amp;#39;t feel like reading more, here&amp;#39;s the TLDR: &lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;Security is all about Context&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;One of the perks of working as a Security Consultant is that you get to
+test/break/pwn applications/software every now and then. In order to effectively
+test applications/software, it is really important to understand the context.
+Two great approaches to understanding the context are: &lt;a href=&quot;https://www.owasp.org/index.php/Application_Threat_Modeling&quot;&gt;Application Threat
+Modeling&lt;/a&gt; and
+&lt;a href=&quot;https://www.owasp.org/index.php/Attack_Surface_Analysis_Cheat_Sheet&quot;&gt;Attack Surface Analysis&lt;/a&gt; (these do
+not have to be formal ones if you’re just testing an application, but are very
+important for efficient security assessments). From the OWASP links mentioned
+above:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The Attack Surface describes all of the different points where an attacker
+could get into a system, and where they could get data out.  Threat Modeling
+is a structured approach that enables you to identify, quantify, and address
+the security risks associated with an application. &lt;/p&gt;
+
+&lt;p&gt;There is a recursive relationship between Attack Surface Analysis and
+Application Threat Modeling: changes to the Attack Surface should trigger
+threat modeling, and threat modeling helps you to understand the Attack
+Surface of the application. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The simplest possible example that I could think of off the top of my head is
+related to a Cross-Site Scripting mitigation technique. The most common advice
+on this problem, which experts usually give, is: &lt;em&gt;&amp;quot;Use context appropriate
+encoding&amp;quot;&lt;/em&gt; (notice the word &amp;quot;context&amp;quot;?). It simply means that just &lt;em&gt;any&lt;/em&gt; output
+encoding cannot guarantee full-proof protection against XSS attacks. What else
+could go wrong if we just HTML encode the output? Well, the application might be
+inserting these user inputs into JavaScript or into the event handlers, in which
+case HTML encoding is not the correct mitigation. Now the question is if it is
+enough to just escape all inputs with respect to JavaScript and HTML? Again, it
+depends!  What if the application has an import to CSV functionality, allowing
+others to import user data in CSV (Comma Seperated Values) format? An attacker
+can use this to insert spreadsheet formulae, which can lead to arbitrary command
+execution on victim’s computer. For more information on this, read &lt;a href=&quot;http://www.contextis.com/resources/blog/comma-separated-vulnerabilities/&quot;&gt;Comma
+Separated Vulnerabilities&lt;/a&gt;. The
+point is, it is hard to devise a proper mitigation mechanism for an attack,
+without understanding the context.&lt;/p&gt;
+
+&lt;p&gt;Yet another example (kind of lame, but apt with regards to this post’s topic):
+Apple claims that &lt;a href=&quot;https://www.apple.com/iphone-6/touch-id/&quot;&gt;&lt;em&gt;your fingerprint is the perfect
+password&lt;/em&gt;&lt;/a&gt;. Well, they are absolutely
+right! But this cannot be true in every context. For instance: &lt;blockquote
+class=&quot;twitter-tweet tw-align-center&quot; lang=&quot;en&quot;&gt;&lt;p&gt;I woke this morning to find
+my 7 y/o levering my finger onto the TouchID sensor of my phone. Maybe time to
+go back to passwords.&lt;/p&gt;&amp;mdash; Matthew Green (@matthew&lt;em&gt;d&lt;/em&gt;green) &lt;a
+href=&quot;https://twitter.com/matthew_d_green/status/537236790000615426&quot;&gt;November
+25, 2014&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot;
+charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m sure that by now, you all would have realized that this is the reason why
+any advice/solution/answer, that you&amp;#39;ve received or you&amp;#39;ll ever receive from a
+security expert, will always start with the phrase: &lt;strong&gt;&lt;em&gt;It depends&lt;/em&gt;&lt;/strong&gt;. Yep, it
+all depends on the context! Big thanks to &lt;a href=&quot;https://www.linkedin.com/in/sethjamesnielson&quot;&gt;Prof. Seth Nielson&lt;/a&gt; for teaching this important
+lesson (among many others).
+&lt;br /&gt;
+&lt;br /&gt;
+Feel free to &lt;a href=&quot;mailto:contact@rahilarora.com&quot;&gt;email me&lt;/a&gt;, if you want me to share
+something specific or need any advice/help. Please feel free to do the same or
+leave a comment below, if you have any advice for me or any comment regarding
+anything on this website. &lt;em&gt;We are all here to learn. That&amp;#39;s what life is all
+about!&lt;/em&gt;&lt;/p&gt;</content><author><name>Rahil Arora</name></author><summary type="html">Since this is my first security related blog post (ever), I would like to write
+about one of the most important things that I learnt during my grad school:
+security is all about context. This is exactly one of those important lessons
+that we learn, as a student, and don’t realize their importance until we apply
+them to the real world problems. It has been almost 3 months since I’ve started
+working as a full-time Security Consultant, and I’ve already realized how
+appropriately this phrase applies to the real world problems in computer
+security. 
+
+In case you don&amp;#39;t feel like reading more, here&amp;#39;s the TLDR: 
+
+
+&amp;quot;Security is all about Context&amp;quot;
+
+
+One of the perks of working as a Security Consultant is that you get to
+test/break/pwn applications/software every now and then. In order to effectively
+test applications/software, it is really important to understand the context.
+Two great approaches to understanding the context are: Application Threat
+Modeling and
+Attack Surface Analysis (these do
+not have to be formal ones if you’re just testing an application, but are very
+important for efficient security assessments). From the OWASP links mentioned
+above:
+
+
+The Attack Surface describes all of the different points where an attacker
+could get into a system, and where they could get data out.  Threat Modeling
+is a structured approach that enables you to identify, quantify, and address
+the security risks associated with an application. 
+
+There is a recursive relationship between Attack Surface Analysis and
+Application Threat Modeling: changes to the Attack Surface should trigger
+threat modeling, and threat modeling helps you to understand the Attack
+Surface of the application. 
+
+
+The simplest possible example that I could think of off the top of my head is
+related to a Cross-Site Scripting mitigation technique. The most common advice
+on this problem, which experts usually give, is: &amp;quot;Use context appropriate
+encoding&amp;quot; (notice the word &amp;quot;context&amp;quot;?). It simply means that just any output
+encoding cannot guarantee full-proof protection against XSS attacks. What else
+could go wrong if we just HTML encode the output? Well, the application might be
+inserting these user inputs into JavaScript or into the event handlers, in which
+case HTML encoding is not the correct mitigation. Now the question is if it is
+enough to just escape all inputs with respect to JavaScript and HTML? Again, it
+depends!  What if the application has an import to CSV functionality, allowing
+others to import user data in CSV (Comma Seperated Values) format? An attacker
+can use this to insert spreadsheet formulae, which can lead to arbitrary command
+execution on victim’s computer. For more information on this, read Comma
+Separated Vulnerabilities. The
+point is, it is hard to devise a proper mitigation mechanism for an attack,
+without understanding the context.
+
+Yet another example (kind of lame, but apt with regards to this post’s topic):
+Apple claims that your fingerprint is the perfect
+password. Well, they are absolutely
+right! But this cannot be true in every context. For instance: I woke this morning to find
+my 7 y/o levering my finger onto the TouchID sensor of my phone. Maybe time to
+go back to passwords.&amp;mdash; Matthew Green (@matthewdgreen) November
+25, 2014 
+
+I’m sure that by now, you all would have realized that this is the reason why
+any advice/solution/answer, that you&amp;#39;ve received or you&amp;#39;ll ever receive from a
+security expert, will always start with the phrase: It depends. Yep, it
+all depends on the context! Big thanks to Prof. Seth Nielson for teaching this important
+lesson (among many others).
+
+
+Feel free to email me, if you want me to share
+something specific or need any advice/help. Please feel free to do the same or
+leave a comment below, if you have any advice for me or any comment regarding
+anything on this website. We are all here to learn. That&amp;#39;s what life is all
+about!</summary></entry><entry><title type="html">Hello World!</title><link href="https://rahilarora.com//2015/01/07/hello-world/" rel="alternate" type="text/html" title="Hello World!" /><published>2015-01-07T00:00:00-08:00</published><updated>2015-01-07T00:00:00-08:00</updated><id>https://rahilarora.com//2015/01/07/hello-world</id><content type="html" xml:base="https://rahilarora.com//2015/01/07/hello-world/">&lt;p&gt;Hola amigos!&lt;/p&gt;
+
+&lt;p&gt;This is just a cliché &lt;em&gt;hello world!&lt;/em&gt; post. To know about me and why I&amp;#39;ve started
+this website, please visit the &lt;a href=&quot;http://www.rahilarora.com/about/&quot;&gt;about
+section&lt;/a&gt;. I wanted to start my blog with a
+technical (security related) post, but I&amp;#39;ve not been able to read anything
+interesting, as I&amp;#39;m currently enjoying most of my time with my family in India.
+Anyways, I&amp;#39;ll just give a quick introduction to what you can expect from the
+website.&lt;/p&gt;
+
+&lt;p&gt;This site is an attempt to improve my knowledge and writing skills, by
+contributing something useful, back to the security community. It will also act
+as a useful resource for the beginners who are interested in topics such as
+Cryptography, Application Security and Network Security. I will try to explain
+things/concepts in simple terms in order to target different types of readers at
+different levels of understanding. However, I beleive that the posts and the
+&lt;a href=&quot;http://www.rahilarora.com/useful_resources/&quot;&gt;resources&lt;/a&gt; I&amp;#39;ll be sharing, will
+be of great use to current graduate/undergrad students, who are willing to
+pursue a career in Security.&lt;/p&gt;
+
+&lt;p&gt;Feel free to &lt;a href=&quot;mailto:contact@rahilarora.com&quot;&gt;email me&lt;/a&gt;, if you want me to share
+something specific or need any advice/help. Please feel free to do the same or
+leave a comment below, if you have any advice for me or any comment regarding
+anything on this website. &lt;em&gt;We are all here to learn. That&amp;#39;s what life is all
+about!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Thank you for reading!&lt;/p&gt;
+
+&lt;p&gt;Stay tuned...&lt;/p&gt;</content><author><name>Rahil Arora</name></author><summary type="html">Hola amigos!
+
+This is just a cliché hello world! post. To know about me and why I&amp;#39;ve started
+this website, please visit the about
+section. I wanted to start my blog with a
+technical (security related) post, but I&amp;#39;ve not been able to read anything
+interesting, as I&amp;#39;m currently enjoying most of my time with my family in India.
+Anyways, I&amp;#39;ll just give a quick introduction to what you can expect from the
+website.
+
+This site is an attempt to improve my knowledge and writing skills, by
+contributing something useful, back to the security community. It will also act
+as a useful resource for the beginners who are interested in topics such as
+Cryptography, Application Security and Network Security. I will try to explain
+things/concepts in simple terms in order to target different types of readers at
+different levels of understanding. However, I beleive that the posts and the
+resources I&amp;#39;ll be sharing, will
+be of great use to current graduate/undergrad students, who are willing to
+pursue a career in Security.
+
+Feel free to email me, if you want me to share
+something specific or need any advice/help. Please feel free to do the same or
+leave a comment below, if you have any advice for me or any comment regarding
+anything on this website. We are all here to learn. That&amp;#39;s what life is all
+about!
+
+Thank you for reading!
+
+Stay tuned...</summary></entry></feed>
