@@ -12,7 +12,7 @@ title:            Rahil Arora
 tagline:          'Personal Website'
 description:      '<span class="aaaa">Security Enthusiast | </span><span class="aaaa">n00b Blogger | </span><span class="aaaa">Tennis Lover</span>'
 url:              https://rahilarora.com
-baseurl:          /
+baseurl:          
 privacy_url:      /privacy
 google_analytics:   true
 gems:
