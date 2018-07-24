@@ -44,6 +44,7 @@ title: Useful Resources
 
 * [Dan Boneh's Cryptograhpy I](https://www.coursera.org/course/crypto) - Learn about the inner workings of cryptographic primitives and how to apply this knowledge in real-world applications
 * [The Matasano Crypto Challenges](http://cryptopals.com/) - A different way to learn about crypto than taking a class or reading a book
+* [Security Baron - Crypto Blog](https://securitybaron.com/blog/cryptography-and-coding-information/) - Resources/readings for folks who are new to security and want to learn about cryptography. (Thank you Ava for the recommendation!)
 
 ### SSL/TLS
 
