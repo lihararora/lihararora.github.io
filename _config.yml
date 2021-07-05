@@ -1,45 +1,57 @@
-# Dependencies
+site: Journal Jekyll Theme
 
-# Serve
+url: 
+baseurl: 
 
-host: 0.0.0.0
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /blog/:slug
+  projects:
+    output: true
+    permalink: /project/:slug
 
-# Permalinks
-permalink:        pretty
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
 
-# Setup
-title:            Rahil Arora
-tagline:          'Personal Website'
-description:      '<span class="aaaa">Security Enthusiast | </span><span class="aaaa">n00b Blogger | </span><span class="aaaa">Tennis Lover</span>'
-url:              https://rahilarora.com
-baseurl:          
-privacy_url:      /privacy
-google_analytics:   true
-gems:
-  - jekyll-sitemap
-  - jekyll-feed
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  
+sass:
+  style: compressed
+
+plugins:
   - jekyll-paginate
-disqus:             true
-disqus_username:    'lihararora'
+  - jekyll-sitemap
 
-author:
-  name:           'Rahil Arora'
-  url:            https://twitter.com/lihararora
-
-paginate:         5
-future: true
-
-# Custom vars
-version:          3.2.1
-
-github:
-    url:            https://github.com/lihararora
-
-twitter:
-    url:            https://twitter.com/lihararora
-
-linkedin:
-    url:            https://www.linkedin.com/in/lihararora
-
-stackoverflow:
-    url:            http://stackexchange.com/users/1471315/rahil-arora?tab=accounts
+paginate: 6
+paginate_path: "/blog/page:num/"
+  

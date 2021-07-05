@@ -1,0 +1,546 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+
+
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+	Rahil Arora
+
+	Journal Theme by https://jekyllthemes.io
+	Premium + free Jekyll themes for your blog or website.
+
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/images/favicon.png">
+	<title>Security is all about Context – Rahil Arora</title>
+	<meta name="description" content="Since this is my first security related blog post (ever), I would like to write
+about one of the most important things that I learnt during my grad school:
+security is all about context. This is exactly one of those important lessons
+that we learn, as a student, and don’t realize their importance until we apply
+them to the real world problems. It has been almost 3 months since I’ve started
+working as a full-time Security Consultant, and I’ve already realized how
+appropriately this phrase applies to the real world problems in computer
+security.
+
+In case you don’t feel like reading more, here’s the TLDR:
+
+“Security is all about Context
+
+One of the perks of working as a Security Consultant is that you get to
+test/break/pwn applications/software every now and then. In order to effectively
+test applications/software, it is really important to understand the context.
+Two great approaches to understanding the context are: Application Threat
+Modeling and
+Attack Surface Analysis (these do
+not have to be formal ones if you’re just testing an application, but are very
+important for efficient security assessments). From the OWASP links mentioned
+above:
+
+The Attack Surface describes all of the different points where an attacker
+could get into a system, and where they could get data out.  Threat Modeling
+is a structured approach that enables you to identify, quantify, and address
+the security risks associated with an application.
+
+There is a recursive relationship between Attack Surface Analysis and
+Application Threat Modeling: changes to the Attack Surface should trigger
+threat modeling, and threat modeling helps you to understand the Attack
+Surface of the application.
+
+The simplest possible example that I could think of off the top of my head is
+related to a Cross-Site Scripting mitigation technique. The most common advice
+on this problem, which experts usually give, is: “Use context appropriate
+encoding” (notice the word “context”?). It simply means that just any output
+encoding cannot guarantee full-proof protection against XSS attacks. What else
+could go wrong if we just HTML encode the output? Well, the application might be
+inserting these user inputs into JavaScript or into the event handlers, in which
+case HTML encoding is not the correct mitigation. Now the question is if it is
+enough to just escape all inputs with respect to JavaScript and HTML? Again, it
+depends!  What if the application has an import to CSV functionality, allowing
+others to import user data in CSV (Comma Seperated Values) format? An attacker
+can use this to insert spreadsheet formulae, which can lead to arbitrary command
+execution on victim’s computer. For more information on this, read Comma
+Separated Vulnerabilities. The
+point is, it is hard to devise a proper mitigation mechanism for an attack,
+without understanding the context.
+
+Yet another example (kind of lame, but apt with regards to this post’s topic):
+Apple claims that your fingerprint is the perfect
+password. Well, they are absolutely
+right! But this cannot be true in every context. For instance:
+I woke this morning to find my 7 y/o levering my finger onto the TouchID sensor of my phone. Maybe time to go back to passwords.&amp;mdash; Matthew Green (@matthew_d_green) November 25, 2014
+
+
+I’m sure that by now, you all would have realized that this is the reason why
+any advice/solution/answer, that you’ve received or you’ll ever receive from a
+security expert, will always start with the phrase: It depends. Yep, it
+all depends on the context! Big thanks to Prof. Seth Nielson for teaching this important
+lesson (among many others).
+
+
+Feel free to email me, if you want me to share
+something specific or need any advice/help. Please feel free to do the same or
+leave a comment below, if you have any advice for me or any comment regarding
+anything on this website. We are all here to learn. That’s what life is all
+about!
+">
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Security is all about Context – Rahil Arora">
+	<meta name="twitter:description" content="Since this is my first security related blog post (ever), I would like to write
+about one of the most important things that I learnt during my grad school:
+security is all about context. This is exactly one of those important lessons
+that we learn, as a student, and don’t realize their importance until we apply
+them to the real world problems. It has been almost 3 months since I’ve started
+working as a full-time Security Consultant, and I’ve already realized how
+appropriately this phrase applies to the real world problems in computer
+security.
+
+In case you don’t feel like reading more, here’s the TLDR:
+
+“Security is all about Context
+
+One of the perks of working as a Security Consultant is that you get to
+test/break/pwn applications/software every now and then. In order to effectively
+test applications/software, it is really important to understand the context.
+Two great approaches to understanding the context are: Application Threat
+Modeling and
+Attack Surface Analysis (these do
+not have to be formal ones if you’re just testing an application, but are very
+important for efficient security assessments). From the OWASP links mentioned
+above:
+
+The Attack Surface describes all of the different points where an attacker
+could get into a system, and where they could get data out.  Threat Modeling
+is a structured approach that enables you to identify, quantify, and address
+the security risks associated with an application.
+
+There is a recursive relationship between Attack Surface Analysis and
+Application Threat Modeling: changes to the Attack Surface should trigger
+threat modeling, and threat modeling helps you to understand the Attack
+Surface of the application.
+
+The simplest possible example that I could think of off the top of my head is
+related to a Cross-Site Scripting mitigation technique. The most common advice
+on this problem, which experts usually give, is: “Use context appropriate
+encoding” (notice the word “context”?). It simply means that just any output
+encoding cannot guarantee full-proof protection against XSS attacks. What else
+could go wrong if we just HTML encode the output? Well, the application might be
+inserting these user inputs into JavaScript or into the event handlers, in which
+case HTML encoding is not the correct mitigation. Now the question is if it is
+enough to just escape all inputs with respect to JavaScript and HTML? Again, it
+depends!  What if the application has an import to CSV functionality, allowing
+others to import user data in CSV (Comma Seperated Values) format? An attacker
+can use this to insert spreadsheet formulae, which can lead to arbitrary command
+execution on victim’s computer. For more information on this, read Comma
+Separated Vulnerabilities. The
+point is, it is hard to devise a proper mitigation mechanism for an attack,
+without understanding the context.
+
+Yet another example (kind of lame, but apt with regards to this post’s topic):
+Apple claims that your fingerprint is the perfect
+password. Well, they are absolutely
+right! But this cannot be true in every context. For instance:
+I woke this morning to find my 7 y/o levering my finger onto the TouchID sensor of my phone. Maybe time to go back to passwords.&amp;mdash; Matthew Green (@matthew_d_green) November 25, 2014
+
+
+I’m sure that by now, you all would have realized that this is the reason why
+any advice/solution/answer, that you’ve received or you’ll ever receive from a
+security expert, will always start with the phrase: It depends. Yep, it
+all depends on the context! Big thanks to Prof. Seth Nielson for teaching this important
+lesson (among many others).
+
+
+Feel free to email me, if you want me to share
+something specific or need any advice/help. Please feel free to do the same or
+leave a comment below, if you have any advice for me or any comment regarding
+anything on this website. We are all here to learn. That’s what life is all
+about!
+">
+	<meta name="twitter:image:src" content="">
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:title" content="Security is all about Context – Rahil Arora" />
+	<meta property="og:description" content="Since this is my first security related blog post (ever), I would like to write
+about one of the most important things that I learnt during my grad school:
+security is all about context. This is exactly one of those important lessons
+that we learn, as a student, and don’t realize their importance until we apply
+them to the real world problems. It has been almost 3 months since I’ve started
+working as a full-time Security Consultant, and I’ve already realized how
+appropriately this phrase applies to the real world problems in computer
+security.
+
+In case you don’t feel like reading more, here’s the TLDR:
+
+“Security is all about Context
+
+One of the perks of working as a Security Consultant is that you get to
+test/break/pwn applications/software every now and then. In order to effectively
+test applications/software, it is really important to understand the context.
+Two great approaches to understanding the context are: Application Threat
+Modeling and
+Attack Surface Analysis (these do
+not have to be formal ones if you’re just testing an application, but are very
+important for efficient security assessments). From the OWASP links mentioned
+above:
+
+The Attack Surface describes all of the different points where an attacker
+could get into a system, and where they could get data out.  Threat Modeling
+is a structured approach that enables you to identify, quantify, and address
+the security risks associated with an application.
+
+There is a recursive relationship between Attack Surface Analysis and
+Application Threat Modeling: changes to the Attack Surface should trigger
+threat modeling, and threat modeling helps you to understand the Attack
+Surface of the application.
+
+The simplest possible example that I could think of off the top of my head is
+related to a Cross-Site Scripting mitigation technique. The most common advice
+on this problem, which experts usually give, is: “Use context appropriate
+encoding” (notice the word “context”?). It simply means that just any output
+encoding cannot guarantee full-proof protection against XSS attacks. What else
+could go wrong if we just HTML encode the output? Well, the application might be
+inserting these user inputs into JavaScript or into the event handlers, in which
+case HTML encoding is not the correct mitigation. Now the question is if it is
+enough to just escape all inputs with respect to JavaScript and HTML? Again, it
+depends!  What if the application has an import to CSV functionality, allowing
+others to import user data in CSV (Comma Seperated Values) format? An attacker
+can use this to insert spreadsheet formulae, which can lead to arbitrary command
+execution on victim’s computer. For more information on this, read Comma
+Separated Vulnerabilities. The
+point is, it is hard to devise a proper mitigation mechanism for an attack,
+without understanding the context.
+
+Yet another example (kind of lame, but apt with regards to this post’s topic):
+Apple claims that your fingerprint is the perfect
+password. Well, they are absolutely
+right! But this cannot be true in every context. For instance:
+I woke this morning to find my 7 y/o levering my finger onto the TouchID sensor of my phone. Maybe time to go back to passwords.&amp;mdash; Matthew Green (@matthew_d_green) November 25, 2014
+
+
+I’m sure that by now, you all would have realized that this is the reason why
+any advice/solution/answer, that you’ve received or you’ll ever receive from a
+security expert, will always start with the phrase: It depends. Yep, it
+all depends on the context! Big thanks to Prof. Seth Nielson for teaching this important
+lesson (among many others).
+
+
+Feel free to email me, if you want me to share
+something specific or need any advice/help. Please feel free to do the same or
+leave a comment below, if you have any advice for me or any comment regarding
+anything on this website. We are all here to learn. That’s what life is all
+about!
+" />
+	<meta property="og:image" content="" />
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Muli:400,400i,600" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<style></style>
+	
+
+	
+	<!-- Analytics Code -->
+	
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading ajax-loading" data-site-url="http://localhost:4000" data-page-url="/blog/context">
+
+
+	<header class="header">
+
+	<div class="header-image header-image--on" style="background-image: url();"></div>
+	<div class="header-image"></div>
+
+	<div class="header-overlay"></div>
+
+	<div class="header__content">
+
+		
+		<a href="/" class="header__title">
+			Rahil Arora
+		</a>
+		
+
+		<p class="header__tagline">Security | Fitness | Mindfulness</p>
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/" class="menu__list__item__link">Latest</a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/about" class="menu__list__item__link">About</a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/security-resources" class="menu__list__item__link">Security Resources</a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/quotes" class="menu__list__item__link">Quotes To Live By</a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://vuln.management" class="menu__list__item__link">Vuln Management</a>
+					</li>
+					
+				</ul>
+				<ul class="socials">
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/lihararora" target="_blank" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/lihararora/" target="_blank" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://stackexchange.com/users/1471315/rahil-arora?tab=accounts" target="_blank" class="socials__item__link" title="Quora">
+			<i class="fab fa-quora" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://github.com/lihararora" target="_blank" class="socials__item__link" title="Github">
+			<i class="fab fa-github" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.linkedin.com/in/lihararora" target="_blank" class="socials__item__link" title="Linkedin">
+			<i class="fab fa-linkedin" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+</ul>
+
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Security is all about Context – Rahil Arora" data-image="">
+
+			<section class="intro">
+
+	<div class="wrap">
+
+		<h1>Security is all about Context</h1>
+		<p>19 April 2015</p>
+
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<p>Since this is my first security related blog post (ever), I would like to write
+about one of the most important things that I learnt during my grad school:
+<em>security is all about context</em>. This is exactly one of those important lessons
+that we learn, as a student, and don’t realize their importance until we apply
+them to the real world problems. It has been almost 3 months since I’ve started
+working as a full-time Security Consultant, and I’ve already realized how
+appropriately this phrase applies to the real world problems in computer
+security.</p>
+
+<p>In case you don’t feel like reading more, here’s the TLDR:</p>
+
+<p><strong><em>“Security is all about Context</em></strong></p>
+
+<p>One of the perks of working as a Security Consultant is that you get to
+test/break/pwn applications/software every now and then. In order to effectively
+test applications/software, it is really important to understand the context.
+Two great approaches to understanding the context are: <a href="https://www.owasp.org/index.php/Application_Threat_Modeling">Application Threat
+Modeling</a> and
+<a href="https://www.owasp.org/index.php/Attack_Surface_Analysis_Cheat_Sheet">Attack Surface Analysis</a> (these do
+not have to be formal ones if you’re just testing an application, but are very
+important for efficient security assessments). From the OWASP links mentioned
+above:</p>
+
+<p><em>The Attack Surface describes all of the different points where an attacker
+could get into a system, and where they could get data out.  Threat Modeling
+is a structured approach that enables you to identify, quantify, and address
+the security risks associated with an application.</em></p>
+
+<p><em>There is a recursive relationship between Attack Surface Analysis and
+Application Threat Modeling: changes to the Attack Surface should trigger
+threat modeling, and threat modeling helps you to understand the Attack
+Surface of the application.</em></p>
+
+<p>The simplest possible example that I could think of off the top of my head is
+related to a Cross-Site Scripting mitigation technique. The most common advice
+on this problem, which experts usually give, is: <em>“Use context appropriate
+encoding”</em> (notice the word “context”?). It simply means that just <em>any</em> output
+encoding cannot guarantee full-proof protection against XSS attacks. What else
+could go wrong if we just HTML encode the output? Well, the application might be
+inserting these user inputs into JavaScript or into the event handlers, in which
+case HTML encoding is not the correct mitigation. Now the question is if it is
+enough to just escape all inputs with respect to JavaScript and HTML? Again, it
+depends!  What if the application has an import to CSV functionality, allowing
+others to import user data in CSV (Comma Seperated Values) format? An attacker
+can use this to insert spreadsheet formulae, which can lead to arbitrary command
+execution on victim’s computer. For more information on this, read <a href="http://www.contextis.com/resources/blog/comma-separated-vulnerabilities/">Comma
+Separated Vulnerabilities</a>. The
+point is, it is hard to devise a proper mitigation mechanism for an attack,
+without understanding the context.</p>
+
+<p>Yet another example (kind of lame, but apt with regards to this post’s topic):
+Apple claims that <a href="https://www.apple.com/iphone-6/touch-id/"><em>your fingerprint is the perfect
+password</em></a>. Well, they are absolutely
+right! But this cannot be true in every context. For instance:</p>
+<blockquote class="twitter-tweet tw-align-center" data-lang="en" style="align:center; margin:auto"><p lang="en" dir="ltr" style="align:center; margin:auto">I woke this morning to find my 7 y/o levering my finger onto the TouchID sensor of my phone. Maybe time to go back to passwords.</p>&mdash; Matthew Green (@matthew_d_green) <a style="align:center; margin:auto" href="https://twitter.com/matthew_d_green/status/537236790000615426">November 25, 2014</a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>I’m sure that by now, you all would have realized that this is the reason why
+any advice/solution/answer, that you’ve received or you’ll ever receive from a
+security expert, will always start with the phrase: <strong><em>It depends</em></strong>. Yep, it
+all depends on the context! Big thanks to <a href="https://www.linkedin.com/in/sethjamesnielson">Prof. Seth Nielson</a> for teaching this important
+lesson (among many others).
+<br />
+<br />
+Feel free to <a href="mailto:contact@rahilarora.com">email me</a>, if you want me to share
+something specific or need any advice/help. Please feel free to do the same or
+leave a comment below, if you have any advice for me or any comment regarding
+anything on this website. <em>We are all here to learn. That’s what life is all
+about!</em></p>
+
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="footer__copyright">
+		<span>© 2021 Rahil Arora</span>
+		<a href="/privacy">Privacy Policy</a>
+	</div>
+
+</footer>
+
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/plugins-min.js"></script>
+	<script src="/js/journal-min.js"></script>
+
+	
+	<!-- Extra Footer JS Code -->
+	
+	
+
+
+</body>
+
+</html>
