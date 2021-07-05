@@ -1,6 +1,6 @@
 ---
 title: About
-featured_image: /images/me1.jpg
+featured_image: /images/me.jpg
 ---
 
 
