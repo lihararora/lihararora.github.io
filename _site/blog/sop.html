@@ -715,11 +715,11 @@ circumvent same origin policy (as discussed in the next section).</p>
 numerous mechanisms that permit HTML web pages to include and display remote
 sub-resources through HTTP GET requests without having these operations
 subjected to a well-defined set of security checks. This can be achieved by
-using HTML tags such as: <code class="highlighter-rouge">&lt;IMG SRC=”...”&gt;</code>, <code class="highlighter-rouge">&lt;SCRIPT SRC="..."&gt;</code>, <code class="highlighter-rouge">&lt;LINK
-REL="stylesheet" HREF="..."&gt;</code>, <code class="highlighter-rouge">&lt;EMBED SRC="..."&gt;</code>, <code class="highlighter-rouge">&lt;OBJECT CODEBASE="..."&gt;</code>, and
-<code class="highlighter-rouge">&lt;APPLET CODEBASE="..."&gt;</code>. These tags are used to issue GET requests to arbitrary
-sites and fetch resources. Not only this, any <code class="highlighter-rouge">Content-Type</code> and
-<code class="highlighter-rouge">Content-Disposition</code> HTTP headers returned by the server for the sub-resource
+using HTML tags such as: <code class="language-plaintext highlighter-rouge">&lt;IMG SRC=”...”&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;SCRIPT SRC="..."&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;LINK
+REL="stylesheet" HREF="..."&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;EMBED SRC="..."&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;OBJECT CODEBASE="..."&gt;</code>, and
+<code class="language-plaintext highlighter-rouge">&lt;APPLET CODEBASE="..."&gt;</code>. These tags are used to issue GET requests to arbitrary
+sites and fetch resources. Not only this, any <code class="language-plaintext highlighter-rouge">Content-Type</code> and
+<code class="language-plaintext highlighter-rouge">Content-Disposition</code> HTTP headers returned by the server for the sub-resource
 are mostly ignored; there is no opportunity to authoritatively instruct the
 browser about the intended purpose of a served document to prevent having the
 data parsed as JavaScript, CSS, etc. More details can be found at <a href="https://code.google.com/p/browsersec/wiki/Part2#Life_outside_same-origin_rules">life outside
@@ -734,9 +734,9 @@ the domain of the HTML page which includes it. That is, regardless of their
 source, remote scripts always execute in the security context of the document
 they are attached to. Once called, JavaScript has full access to the current
 DOM, and limited access to DOMs of other windows; it may also further invoke
-new JavaScript by calling <code class="highlighter-rouge">eval()</code>, configuring timers (<code class="highlighter-rouge">setTimeout(...)</code> and
-<code class="highlighter-rouge">setInterval(...)</code>), or producing JavaScript-invoking HTML. So, for example, if
-you include the Google Analytics code with a <code class="highlighter-rouge">&lt;script&gt;</code> tag, it can do anything
+new JavaScript by calling <code class="language-plaintext highlighter-rouge">eval()</code>, configuring timers (<code class="language-plaintext highlighter-rouge">setTimeout(...)</code> and
+<code class="language-plaintext highlighter-rouge">setInterval(...)</code>), or producing JavaScript-invoking HTML. So, for example, if
+you include the Google Analytics code with a <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> tag, it can do anything
 to your website but does not have same origin permissions on the Google’s
 website.
 <br />
@@ -754,14 +754,14 @@ references for further readings with the techniques.</p>
 
 <p>JSONP is really a simple trick to overcome the XMLHttpRequest same
 domain policy. As you know one cannot read an AJAX response from a different
-domain. So - instead of using XMLHttpRequest, we have to use <code class="highlighter-rouge">&lt;SCRIPT&gt;</code> tags in
+domain. So - instead of using XMLHttpRequest, we have to use <code class="language-plaintext highlighter-rouge">&lt;SCRIPT&gt;</code> tags in
 order for JavaScript to get data from another domain. It requires the
 application server to send back a JSON response to the client, wrapped around a
-callback method provided by the client. So the <code class="highlighter-rouge">&lt;SCRIPT&gt;</code> tag is used to make a
+callback method provided by the client. So the <code class="language-plaintext highlighter-rouge">&lt;SCRIPT&gt;</code> tag is used to make a
 GET request to a source (different domain) such as:
 <a href="http://www.example.net/sample.php?callback=mycallback">http://www.example.net/sample.php?callback=mycallback</a>. The basically returns
-back something like: <code class="highlighter-rouge">mycallback({ foo: 'bar' })</code>. This will invoke the function
-<code class="highlighter-rouge">mycallback()</code> which is already defined on client side and thus your script will be
+back something like: <code class="language-plaintext highlighter-rouge">mycallback({ foo: 'bar' })</code>. This will invoke the function
+<code class="language-plaintext highlighter-rouge">mycallback()</code> which is already defined on client side and thus your script will be
 able read the server response. For more information, read <a href="http://stackoverflow.com/questions/2067472/what-is-jsonp-all-about">this discussion on SO</a>.</p>
 
 <p>There are
@@ -792,14 +792,14 @@ more secure than simply allowing all such cross-origin requests.”</em></p>
 
 <p>Again, CORS can also have serious security implications, if not implemented
 properly. For example, if a server is configured to respond to all the origins
-(i.e. sets <code class="highlighter-rouge">Access-Control-Allow-Origin: *</code> in the response) and requires
-credentials from the client (i.e. sets <code class="highlighter-rouge">Access-Control-Allow-Credentials: True</code> in the
+(i.e. sets <code class="language-plaintext highlighter-rouge">Access-Control-Allow-Origin: *</code> in the response) and requires
+credentials from the client (i.e. sets <code class="language-plaintext highlighter-rouge">Access-Control-Allow-Credentials: True</code> in the
 response), then you can trick someone’s browser into making a CSRF style
 request. Obviously, this can be protected against such attack using a normal CSRF token.</p>
 
 <h3 id="windowpostmessage-method">window.postMessage() method</h3>
 
-<p><code class="highlighter-rouge">window.postMessage</code>, when called, causes a
+<p><code class="language-plaintext highlighter-rouge">window.postMessage</code>, when called, causes a
 MessageEvent to be dispatched at the target window when any pending script that
 must be executed completes (e.g. remaining event handlers if window.postMessage
 is called from an event handler, previously-set pending timeouts, etc.).</p>
