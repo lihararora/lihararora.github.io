@@ -5,7 +5,9 @@ featured_image: /images/demo/demo-portrait.jpg
 
 ![](/images/demo/about.jpg)
 
-Here are some of the quotes that will inspire the hell out of you:
+`"You don't have to love the hard work. You just have to crave the result so intensely that the hard work becomes irrelevant."` <cite>- Tim Grover</cite>
+
+`"Fear is excitement without breath."` <cite>- Robert Heller</cite>
 
 `"I began to realize how important it was to be an enthusiast in life. He taught me that if you are interested in something, no matter what it is, go at it at full speed ahead. Embrace it with both arms, hug it, love it and above all become passionate about it. Lukewarm is no good."` <cite>- Roald Dahl</cite>
 
