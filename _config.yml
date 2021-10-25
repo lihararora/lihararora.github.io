@@ -1,7 +1,10 @@
 site: Journal Jekyll Theme
 
-url: 
-baseurl: 
+# Google Analytics
+google_analytics: UA-58294466-1
+
+url:
+baseurl:
 
 collections:
   pages:
@@ -44,7 +47,7 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-  
+
 sass:
   style: compressed
 
@@ -54,4 +57,3 @@ plugins:
 
 paginate: 6
 paginate_path: "/blog/page:num/"
-  
