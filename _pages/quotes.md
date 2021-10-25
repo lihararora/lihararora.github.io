@@ -1,9 +1,9 @@
 ---
 title: Quotes To Live By
-featured_image: /images/demo/demo-portrait.jpg
+featured_image: /images/demo/demo-square.jpg
 ---
 
-![](/images/demo/about.jpg)
+![](/images/peace.jpeg)
 
 `"You don't have to love the hard work. You just have to crave the result so intensely that the hard work becomes irrelevant."` <cite>- Tim Grover</cite>
 

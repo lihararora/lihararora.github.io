@@ -1,6 +1,6 @@
 ---
 title: About
-featured_image: /images/me.jpg
+featured_image: /images/me.jpeg
 ---
 
 
@@ -8,9 +8,9 @@ Hey there! Welcome to my personal website!
 
 My name is Rahil. I am a Security Enthusiast, living and working in Seattle area. I graduated from the [Johns Hopkins Universty - Information Security Institute](http://isi.jhu.edu) with a Master's in Security Informatics. My primary areas of interest include Web Application/Product Security, Cloud Security, and Red Teaming. [Email me](mailto:contact@rahilarora.com) to get more professional information (or to request my CV). I enjoy playing sports (mostly tennis and ping pong) and other fitness activities such as cardio kickboxing and running. I'm currently hooked to [Les Mills' Bodycombat workouts](https://www.lesmills.com/us/workouts/fitness-classes/bodycombat/).  
 
-I plan to use this website as medium to share my thoughts on some security topics and also share anything interested that I learn outside security realm!
+I plan to use this website as medium to share my thoughts on security stuff and things I learn outside the world of cybersecurity. If you like memes, check out this [cybersecurity memes collection](https://vuln.management/memes/) I'm tying to build. Feel free to send me any interesting memes you think should be in this collection.
 
-Have questions or suggestions? Feel free to either comment below or [email me](mailto:contact@rahilarora.com) or contact me on [Twitter](https://twitter.com/lihararora).
+Have questions or suggestions? Feel free to [email me](mailto:contact@rahilarora.com) or contact me on [Twitter](https://twitter.com/lihararora).
 
 Thanks for reading!
 

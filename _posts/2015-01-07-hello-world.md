@@ -1,7 +1,9 @@
---- 
-layout: post 
+---
+layout: post
 title: Hello World!  
 ---
+
+![](/images/hello.jpeg)
 
 Hola amigos!
 
