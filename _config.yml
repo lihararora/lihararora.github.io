@@ -3,8 +3,7 @@ site: Journal Jekyll Theme
 # Google Analytics
 google_analytics: UA-58294466-1
 
-url:
-baseurl:
+url: "https://rahilarora.com"
 
 collections:
   pages:
