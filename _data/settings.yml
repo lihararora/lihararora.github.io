@@ -22,6 +22,8 @@ menu_settings:
       url: '/quotes'
     - title: 'Vuln Management'
       url: 'https://vuln.management'
+    - title: 'Vegan Place'
+      url: 'https://www.vegan.place/'
 
 grid_settings:
   grid_spacing: 10
