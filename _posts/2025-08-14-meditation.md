@@ -5,7 +5,7 @@ title: Meditation
 
 ![](/images/monk.jpeg)
 
-There’s a vast amount of wisdom out there, shared by many enlightened beings and through various religious scriptures. I thought [Advashanti’s](https://adyashanti.opengatesangha.org/) views on meditations were particularly profound, at least for a beginner like me. 
+There’s a vast amount of wisdom out there, shared by many enlightened beings and through various religious scriptures. I thought [Adyashanti’s](https://adyashanti.opengatesangha.org/) views on meditations were particularly profound, at least for a beginner like me. 
 
 Our natural state as humans is of enlightenment. So essentially, if we just let things be, we can get enlightened by approaching our natural state. But because of all the stress, emotions, and attachments we accumulate over time, just letting things be is not that easy.
 
