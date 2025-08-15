@@ -9,7 +9,7 @@ There’s a vast amount of wisdom out there, shared by many enlightened beings a
 
 Our natural state as humans is of enlightenment. So essentially, if we just let things be, we can get enlightened by approaching our natural state. But because of all the stress, emotions, and attachments we accumulate over time, just letting things be is not that easy.
 
-When we just let things be and stop suppressing our emotions, a lot of these emotions naturally surface. This makes our attempts to just be somewhat more difficult. As these suppressed emotions start surfacing, dealing with them is important. The way to deal with them by experiencing them so that they naturally pass away. 
+When we just let things be and stop suppressing our emotions, a lot of these emotions naturally surface. This makes our attempts to just be somewhat more difficult. As these suppressed emotions start surfacing, dealing with them is important. The way to deal with them is by experiencing them so that they naturally pass away. 
 
 If these emotions are sticking, then it means the mind is resisting dealing with them. This resistance can induce fear, which is very natural. Our egotistical mind tends to run away from fear. This fear is usually a doorway to something deeper inside us, so experiencing it helps us explore our inner/true self.
 
